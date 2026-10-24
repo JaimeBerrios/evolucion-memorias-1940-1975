@@ -1,0 +1,42 @@
+[
+  {
+    "archivo": "assets/contenido/imagenes/prom-fusibles.png",
+    "pdf": "info/17- Tipos de tecnologías de memorias RAM_ROM_EPROM_entre otros..pdf",
+    "pagina": 7,
+    "figura": "Figura 3: grabación de una línea PROM",
+    "atribucion": "Newton C. Braga (2024), según el material docente",
+    "fuente_original": "https://www.incb.com.mx/index.php/curso-de-electronica/96-curso-de-electronica-electronica-digital/3447-curso-de-electronica-electronica-digital-parte-13-memorias-adcs-y-dacs-cur6006s",
+    "tratamiento": "Extracción sin recorte ni modificación del raster. Duotono institucional únicamente mediante filtro SVG en pantalla.",
+    "sha256": "1fe14396de96a50a0fb787e745fcabc58843131fe6e4f5406dd771be9739a7f8"
+  },
+  {
+    "archivo": "assets/contenido/imagenes/direccionamiento.png",
+    "pdf": "info/17- Tipos de tecnologías de memorias RAM_ROM_EPROM_entre otros..pdf",
+    "pagina": 10,
+    "figura": "Figura 6: proceso de direccionamiento",
+    "atribucion": "Newton C. Braga (2024), según el material docente",
+    "fuente_original": "https://www.incb.com.mx/index.php/curso-de-electronica/96-curso-de-electronica-electronica-digital/3447-curso-de-electronica-electronica-digital-parte-13-memorias-adcs-y-dacs-cur6006s",
+    "tratamiento": "Extracción sin recorte ni modificación del raster. Duotono institucional únicamente mediante filtro SVG en pantalla.",
+    "sha256": "9a0d59fefe726ca0e2d4084e60a12337a843a12f8fa8b9510f590bfe265b3109"
+  },
+  {
+    "archivo": "assets/contenido/imagenes/eprom-ventanas.png",
+    "pdf": "info/17- Tipos de tecnologías de memorias RAM_ROM_EPROM_entre otros..pdf",
+    "pagina": 11,
+    "figura": "Figura 7: EPROM con ventana de cuarzo",
+    "atribucion": "Newton C. Braga (2024), según el material docente",
+    "fuente_original": "https://www.incb.com.mx/index.php/curso-de-electronica/96-curso-de-electronica-electronica-digital/3447-curso-de-electronica-electronica-digital-parte-13-memorias-adcs-y-dacs-cur6006s",
+    "tratamiento": "Extracción sin recorte ni modificación del raster. Duotono institucional únicamente mediante filtro SVG en pantalla.",
+    "sha256": "5a055927ab569cc8e1a5584a7d20396119156354526eeaf643298e3de45cda86"
+  },
+  {
+    "archivo": "assets/contenido/imagenes/borrador-uv.png",
+    "pdf": "info/17- Tipos de tecnologías de memorias RAM_ROM_EPROM_entre otros..pdf",
+    "pagina": 11,
+    "figura": "Figura 8: borrador de EPROM",
+    "atribucion": "Newton C. Braga (2024), según el material docente",
+    "fuente_original": "https://www.incb.com.mx/index.php/curso-de-electronica/96-curso-de-electronica-electronica-digital/3447-curso-de-electronica-electronica-digital-parte-13-memorias-adcs-y-dacs-cur6006s",
+    "tratamiento": "Extracción sin recorte ni modificación del raster. Duotono institucional únicamente mediante filtro SVG en pantalla.",
+    "sha256": "9bdf5d29e7284c177d1f3431689ff5d91e9a0a3f5bae3f3f8488642919a979ad"
+  }
+]

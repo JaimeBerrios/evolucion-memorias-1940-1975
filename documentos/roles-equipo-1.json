@@ -1,0 +1,157 @@
+[
+  {
+    "nombre": "Carlos Alberto Campos Santos",
+    "codigo": "cs1209042018",
+    "rol": "El Historiador",
+    "criterio": "Limitaciones técnicas de la época previa que obligaron a crear estas nuevas memorias",
+    "evidencias": [
+      {
+        "id": "cuarenta",
+        "lamina": 3,
+        "titulo": "Recordar era mantener algo en movimiento"
+      },
+      {
+        "id": "ferrita",
+        "lamina": 5,
+        "titulo": "Un anillo que recuerda sin corriente"
+      },
+      {
+        "id": "prom",
+        "lamina": 8,
+        "titulo": "PROM: escribir una vez, recordar después"
+      },
+      {
+        "id": "dram",
+        "lamina": 10,
+        "titulo": "DRAM: hacer espacio para más bits"
+      }
+    ],
+    "segundos_estimados": 172,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  },
+  {
+    "nombre": "Néstor de Jesús Ramos Membreño",
+    "codigo": "rm0102042024",
+    "rol": "El Ingeniero de Hardware",
+    "criterio": "Mecanismos físicos y eléctricos de almacenamiento (fusibles, compuertas flotantes, capacitores, luz UV)",
+    "evidencias": [
+      {
+        "id": "carlos-01",
+        "lamina": 6,
+        "titulo": "Dentro de un núcleo de ferrita"
+      },
+      {
+        "id": "carlos-prom",
+        "lamina": 9,
+        "titulo": "PROM: una conexión que no vuelve atrás"
+      },
+      {
+        "id": "carlos-02",
+        "lamina": 11,
+        "titulo": "El bit se escapa si no lo cuidamos"
+      },
+      {
+        "id": "carlos-03",
+        "lamina": 14,
+        "titulo": "Una carga atrapada, una ventana para borrarla"
+      }
+    ],
+    "segundos_estimados": 180,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  },
+  {
+    "nombre": "Kevin Alexis Portillo Salgado",
+    "codigo": "ps0721042024",
+    "rol": "El Analista de Lógica y Dirección",
+    "criterio": "Cómo se leen/escriben los datos (volatilidad, direccionamiento por buses R/W, borrado)",
+    "evidencias": [
+      {
+        "id": "direccion",
+        "lamina": 7,
+        "titulo": "Una dirección es una ubicación"
+      },
+      {
+        "id": "comparacion",
+        "lamina": 15,
+        "titulo": "Cuatro memorias, decisiones diferentes"
+      },
+      {
+        "id": "reto",
+        "lamina": 16,
+        "titulo": "¿Qué usarías para guardar un programa corregible?"
+      }
+    ],
+    "segundos_estimados": 147,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  },
+  {
+    "nombre": "Ricardo Antonio Martínez Romero",
+    "codigo": "mr0417042024",
+    "rol": "El Especialista de Campo",
+    "criterio": "Ejemplos reales de computadoras y dispositivos donde se usaron comercialmente",
+    "evidencias": [
+      {
+        "id": "campo-retardo",
+        "lamina": 4,
+        "titulo": "1951: la memoria sale del laboratorio"
+      },
+      {
+        "id": "campo-silicio",
+        "lamina": 12,
+        "titulo": "1970–1971: del chip al equipo comercial"
+      },
+      {
+        "id": "eprom",
+        "lamina": 13,
+        "titulo": "EPROM: corregir sin desechar el chip"
+      }
+    ],
+    "segundos_estimados": 137,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  },
+  {
+    "nombre": "Salvador Alejandro Murillo Hernández",
+    "codigo": "mh1485042020",
+    "rol": "El Maquetador y Diseñador",
+    "criterio": "Diagramación y organización visual de los hitos en la línea de tiempo común",
+    "evidencias": [
+      {
+        "id": "mapa",
+        "lamina": 2,
+        "titulo": "Una línea de tiempo, cinco decisiones"
+      },
+      {
+        "id": "balance",
+        "lamina": 17,
+        "titulo": "La historia se entiende al conectar los hitos"
+      }
+    ],
+    "segundos_estimados": 82,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  },
+  {
+    "nombre": "Jaime Fernando Berríos Ortiz",
+    "codigo": "bo0310042024",
+    "rol": "El Vocero (Pitcher)",
+    "criterio": "Presentación de la era ante el grupo y defensa del porqué fue la etapa fundamental de la computación",
+    "evidencias": [
+      {
+        "id": "portada",
+        "lamina": 1,
+        "titulo": "Antes del chip, el reto era recordar"
+      },
+      {
+        "id": "cierre",
+        "lamina": 18,
+        "titulo": "La memoria hizo posible el programa"
+      },
+      {
+        "id": "referencias",
+        "lamina": 19,
+        "titulo": "Las fechas cuentan historias distintas"
+      }
+    ],
+    "segundos_estimados": 114,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+  }
+]

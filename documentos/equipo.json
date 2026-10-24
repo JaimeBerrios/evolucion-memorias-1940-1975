@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Carlos Alberto Campos Santos",
+    "codigo": "cs1209042018",
+    "rol": "El Historiador",
+    "criterio": "Limitaciones técnicas de la época previa que obligaron a crear estas nuevas memorias"
+  },
+  {
+    "nombre": "Néstor de Jesús Ramos Membreño",
+    "codigo": "rm0102042024",
+    "rol": "El Ingeniero de Hardware",
+    "criterio": "Mecanismos físicos y eléctricos de almacenamiento (fusibles, compuertas flotantes, capacitores, luz UV)"
+  },
+  {
+    "nombre": "Kevin Alexis Portillo Salgado",
+    "codigo": "ps0721042024",
+    "rol": "El Analista de Lógica y Dirección",
+    "criterio": "Cómo se leen/escriben los datos (volatilidad, direccionamiento por buses R/W, borrado)"
+  },
+  {
+    "nombre": "Ricardo Antonio Martínez Romero",
+    "codigo": "mr0417042024",
+    "rol": "El Especialista de Campo",
+    "criterio": "Ejemplos reales de computadoras y dispositivos donde se usaron comercialmente"
+  },
+  {
+    "nombre": "Salvador Alejandro Murillo Hernández",
+    "codigo": "mh1485042020",
+    "rol": "El Maquetador y Diseñador",
+    "criterio": "Diagramación y organización visual de los hitos en la línea de tiempo común"
+  },
+  {
+    "nombre": "Jaime Fernando Berríos Ortiz",
+    "codigo": "bo0310042024",
+    "rol": "El Vocero (Pitcher)",
+    "criterio": "Presentación de la era ante el grupo y defensa del porqué fue la etapa fundamental de la computación"
+  }
+]

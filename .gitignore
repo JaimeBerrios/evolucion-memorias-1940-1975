@@ -1,0 +1,18 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Copias de seguridad y archivos temporales
+*.bak
+*.tmp
+*~
+
+# Entornos y configuración local
+.vscode/
+.idea/
+.venv/
+.env
+.env.*
+.agents/
+.codex/
