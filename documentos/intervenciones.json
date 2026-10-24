@@ -231,8 +231,8 @@
     "year": 1956,
     "date": "1956",
     "stage": "prom",
-    "text": "Una PROM de fusibles guarda el patrón mediante conexiones internas. El programador aplica un pulso para abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía. Pero esos fusibles no se pueden reconstruir. Si hay un error, no podemos borrar y grabar otra vez el chip. Carlos sigue con DRAM.",
-    "body": "<div class=\"media-explanation\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/prom-fusibles.png\" aria-label=\"Ampliar: Programación mediante apertura de fusibles en una línea PROM\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/prom-fusibles.png\" alt=\"Programación mediante apertura de fusibles en una línea PROM\"><span>↗ Ampliar evidencia</span></button><figcaption>Material docente, p. 7, fig. 3 · Braga (2024).</figcaption></figure><div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Enlaces intactos y abiertos de una PROM de fusibles\"><path d=\"M40 35H440M40 125H440M100 35v90M200 35v35m0 25v30M300 35v90M400 35v35m0 25v30\"/><text x=\"100\" y=\"150\">CONEXIÓN</text><text x=\"350\" y=\"150\">FUSIBLE ABIERTO</text></svg></div><ol class=\"process\"><li>Seleccionar enlaces</li><li>Aplicar programación</li><li>Patrón irreversible</li></ol></div>",
+    "text": "Una PROM de fusibles guarda el patrón mediante conexiones internas. El programador aplica un pulso de 15 mA para fundir y abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía. Pero esos fusibles no se pueden reconstruir. Si hay un error, no podemos borrar y grabar otra vez el chip. Carlos sigue con DRAM.",
+    "body": "<div class=\"media-explanation\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/prom-fusibles.png\" aria-label=\"Ampliar: Programación mediante apertura de fusibles en una línea PROM\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/prom-fusibles.png\" alt=\"Programación mediante apertura de fusibles en una línea PROM\"><span>↗ Ampliar evidencia</span></button><figcaption>Material docente, p. 7, fig. 3 · Braga (2024).</figcaption></figure><div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Enlaces intactos y abiertos de una PROM de fusibles\"><path d=\"M40 35H440M40 125H440M100 35v90M200 35v35m0 25v30M300 35v90M400 35v35m0 25v30\"/><text x=\"100\" y=\"150\">CONEXIÓN</text><text x=\"350\" y=\"150\">FUSIBLE ABIERTO</text></svg></div><ol class=\"process\"><li>Seleccionar enlaces</li><li>Fundir con 15 mA</li><li>Patrón irreversible</li></ol></div>",
     "claim": "Hardware · La permanencia del patrón se consigue mediante enlaces irreversibles.",
     "cue": "Señalar los fusibles abiertos. Dar paso a Carlos.",
     "dur": 31,
@@ -245,7 +245,7 @@
     ],
     "speech_parts": [
       "Una PROM de fusibles guarda el patrón mediante conexiones internas.",
-      "El programador aplica un pulso para abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía.",
+      "El programador aplica un pulso de 15 mA para fundir y abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía.",
       "Pero esos fusibles no se pueden reconstruir. Si hay un error, no podemos borrar y grabar otra vez el chip. Carlos sigue con DRAM."
     ]
   },
