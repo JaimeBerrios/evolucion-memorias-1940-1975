@@ -35,6 +35,8 @@ Reveal.initialize({
   hash: true,
   slideNumber: "c/t",
   navigationMode: "default",
+  // Mantener las láminas 16:9: el modo scroll reconstruye el DOM y sus controles.
+  scrollActivationWidth: null,
   controls: true,
   controlsTutorial: true,
   controlsLayout: "bottom-right",

@@ -66,11 +66,12 @@
 .reveal .era-watermark { position: absolute; top: 66px; right: 56px; font-size: 90px; line-height: 1; letter-spacing: -5px; font-weight: 800; color: rgba(23,56,100,.055); pointer-events: none; }
 .era-content { position: absolute; top: 170px; left: 56px; right: 56px; height: 370px; }
 .reveal .evidence { position: absolute; left: 56px; top: 542px; right: 56px; margin: 0; font-size: 10px; line-height: 1.3; opacity: .7; }
-/* El tiempo es un carril persistente: las fechas no cambian de posición. */
-.chronology { position: absolute; top: 564px; left: 56px; right: 56px; height: 88px; }
+/* El tiempo es un carril persistente: las fechas no cambian de posición.
+   translate conserva el centrado cuando Auto-Animate administra transform. */
+.chronology { z-index: 2; position: absolute; top: 564px; left: 56px; right: 56px; height: 88px; }
 .time-axis, .time-travel { position: absolute; left: 4%; top: 32px; height: 2px; right: 4%; background: var(--line); }
 .time-travel { right: auto; height: 3px; top: 31px; background: var(--ink); border-radius: 2px; }
-.reveal .time-node { position: absolute; top: 0; width: 114px; transform: translateX(-50%); color: var(--ink); text-decoration: none; text-align: center; }
+.reveal .time-node { position: absolute; top: 0; width: max-content; min-width: 64px; translate: -50% 0; color: var(--ink); text-decoration: none; text-align: center; }
 .node-date { display: block; font-size: 17px; font-weight: 700; line-height: 20px; white-space: nowrap; }
 .node-dot { display: block; width: 12px; height: 12px; margin: 7px auto 10px; border: 2px solid var(--ink); border-radius: 50%; background: var(--paper); box-sizing: border-box; transition: box-shadow .18s ease; }
 .node-name { display: block; font-size: 13px; line-height: 16px; white-space: nowrap; opacity: .65; }
@@ -81,13 +82,13 @@
 .time-bound { position: absolute; top: 23px; font-size: 12px; line-height: 1; opacity: .65; }
 .time-bound.start { left: 0; }
 .time-bound.end { right: 0; }
-.reveal .travelling-bit { position: absolute; top: 71px; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--ink); color: var(--paper); font: bold 11px monospace; }
+.reveal .travelling-bit { pointer-events: none; position: absolute; top: 24px; translate: -50% 0; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--ink); color: var(--paper); font: bold 11px monospace; }
 .reveal .recall-strip, .reveal .argument-strip { position: absolute; left: 56px; right: 56px; bottom: 12px; height: 37px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; padding: 0 16px; margin: 0; border-radius: 9px; background: var(--ink); color: var(--paper); box-sizing: border-box; font-size: 16px; line-height: 1.2; }
 .reveal .recall-strip span { text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,.3); font-weight: 600; }
 .reveal .recall-strip span:last-child { border: 0; }
 /* Apertura: pregunta a la izquierda, un único foco interactivo a la derecha. */
 .reveal .layout-hero h2 { font-size: 52px; max-width: 1050px; }
-.reveal .opening-copy { max-width: 700px; padding-top: 10px; }
+.reveal .opening-copy { max-width: 700px; width: calc(100% - 410px); padding-top: 10px; }
 .reveal .brand { display: block; height: 60px; max-width: 310px; object-fit: contain; margin: 0 0 24px; }
 .reveal .opening-line { font-size: 32px; line-height: 1.25; font-weight: 650; letter-spacing: -.7px; margin: 0 0 22px; }
 .reveal .opening-period { font-size: 15px; line-height: 1.5; max-width: 650px; margin: 0 0 20px; }
@@ -106,7 +107,7 @@
 .era-mapa .node-dot { width: 20px; height: 20px; margin: 10px auto 20px; }
 .era-mapa .node-name { font-size: 17px; line-height: 21px; opacity: 1; }
 .era-mapa .time-bound { top: 43px; font-size: 14px; }
-.reveal .chronology-map .travelling-bit { top: 115px; width: 23px; height: 23px; font-size: 14px; }
+.reveal .chronology-map .travelling-bit { top: 39px; width: 23px; height: 23px; font-size: 14px; }
 .reveal .map-question { margin: 0; max-width: 1100px; font-size: 29px; line-height: 1.35; font-weight: 500; }
 .reveal .map-key { position: absolute; top: 295px; left: 0; right: 0; display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; font-size: 19px; }
 .reveal .map-key span { border-top: 2px solid var(--ink); padding: 14px 0 0; }
@@ -158,7 +159,9 @@
 .reveal .evidence-figure { display: flex; flex-direction: column; justify-content: center; min-width: 0; height: 100%; margin: 0; }
 .reveal .image-zoom { display: block; width: 100%; padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); color: var(--ink); cursor: zoom-in; box-sizing: border-box; }
 .reveal .image-zoom img { display: block; width: 100%; height: 245px; max-height: none; max-width: none; object-fit: contain; margin: 0; }
-.reveal .image-zoom span { display: block; text-align: right; margin-top: 12px; font: 11px sans-serif; letter-spacing: .2px; }
+.reveal .image-zoom > span { display: block; text-align: right; margin-top: 12px; font: 11px sans-serif; letter-spacing: .2px; }
+.reveal .image-zoom .zoom-glyph { display: none; }
+.reveal .image-zoom .icono-fa { margin-right: 5px; vertical-align: -.15em; }
 .reveal .evidence-figure figcaption { margin-top: 11px; font-size: 11px; line-height: 1.45; opacity: .75; }
 .reveal .photo-story { display: grid; grid-template-columns: 1.1fr 1fr; gap: 38px; height: 100%; align-items: center; }
 .reveal .photo-argument h3 { font-size: 32px; line-height: 1.2; letter-spacing: -.7px; margin: 0 0 22px; }
@@ -218,6 +221,7 @@
 .reveal .reference-columns .hint { margin-top: 24px; font-size: 12px; }
 /* Interfaz de exposición: baja presencia visual y foco visible al usar teclado. */
 .reveal .pie { bottom: 7px; left: 30px; right: 30px; padding-top: 6px; border-top: 1px solid var(--line); background: var(--paper); color: var(--ink); font-size: 11px; }
+.reveal.overview .pie { visibility: hidden; }
 .reveal .pie #expositor { padding: 3px 10px; background: var(--ink); color: var(--paper); font-size: 11px; letter-spacing: 0; }
 .reveal .slide-number { background: var(--paper) !important; color: var(--ink) !important; }
 .reveal .ruta-exposicion { position: absolute; top: 10px; left: 22px; z-index: 8; display: flex; align-items: center; gap: 12px; font: 11px sans-serif; }
@@ -227,9 +231,16 @@
 .herramientas { position: fixed; right: 15px; top: 8px; z-index: 30; display: flex; gap: 7px; color: var(--ink); font: 12px sans-serif; }
 .herramientas details { position: relative; }
 .herramientas summary, .herramientas button { padding: 8px 11px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }
-.herramientas nav, .herramientas .atajos { position: absolute; right: 0; top: 36px; width: min(370px,85vw); max-height: 75vh; padding: 15px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: 0 14px 38px rgba(23,56,100,.12); box-sizing: border-box; }
-.herramientas nav ol { margin: 0; padding-left: 25px; }
-.herramientas a { display: block; padding: 6px 0; color: var(--ink); line-height: 1.45; }
+.herramientas nav, .herramientas .atajos { position: fixed; right: 15px; top: 48px; width: min(370px,calc(100vw - 30px)); max-height: min(75vh,calc(100dvh - 64px)); padding: 15px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: 0 14px 38px rgba(23,56,100,.12); box-sizing: border-box; }
+.herramientas summary { display: flex; align-items: center; list-style: none; }
+.herramientas summary::-webkit-details-marker { display: none; }
+.herramientas .disclosure-icon { width: .7em; height: .7em; margin: 0 0 0 9px; transition: transform .18s ease; }
+.herramientas details[open] .disclosure-icon { transform: rotate(90deg); }
+.herramientas summary:hover, .herramientas button:hover { background: var(--wash); }
+.herramientas summary:focus-visible, .herramientas button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.herramientas nav ol { margin: 0; padding: 0; list-style: none; }
+.herramientas a { display: block; padding: 6px 10px; border-radius: 5px; color: var(--ink); line-height: 1.45; text-decoration: none; }
+.herramientas nav a:hover, .herramientas nav a[aria-current=step] { background: var(--wash); }
 .herramientas .atajos p { line-height: 1.8; }
 .herramientas .atajos button { margin-bottom: 8px; }
 .herramientas [aria-current=step] { font-weight: 700; text-decoration: underline; }
@@ -247,11 +258,13 @@
   .reveal .ruta-exposicion { display: none; }
   .herramientas { font-size: 11px; }
   #pantalla-completa span { display: none; }
-  .reveal .pie { left: 10px; right: 10px; font-size: 9px; }
-  .reveal .pie #expositor { font-size: 9px; }
+  .reveal .pie { left: 10px; right: 10px; font-size: 9px; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+  .reveal .pie .pie-tema { display: none; }
+  .reveal .pie #expositor { font-size: 9px; max-width: 100%; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; justify-self: start; }
   .reveal .pie .pie-der { padding-right: 40px; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .herramientas .disclosure-icon { transition: none; }
   .reveal *, .reveal *::before, .reveal *::after { animation: none !important; transition: none !important; }
 }
 @media print {
