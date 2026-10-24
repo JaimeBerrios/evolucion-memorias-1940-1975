@@ -31,7 +31,7 @@ Reveal.on("slidechanged", actualizarPie);
 Reveal.initialize({
   width: 1280,
   height: 720,
-  margin: 0.04,
+  margin: 0.06,
   hash: true,
   slideNumber: "c/t",
   navigationMode: "default",
@@ -41,8 +41,8 @@ Reveal.initialize({
   controlsBackArrows: "faded",
   progress: true,
   center: false,
-  transition: "slide",
-  transitionSpeed: "default",
+  transition: "fade",
+  transitionSpeed: "fast",
   backgroundTransition: "fade",
   plugins: [RevealNotes, RevealZoom, RevealSearch, RevealHighlight]
 });

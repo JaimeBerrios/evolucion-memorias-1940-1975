@@ -2,42 +2,67 @@
   {
     "id": "portada",
     "date": "1940—1975",
-    "title": "Antes del chip, el reto era recordar",
+    "title": "¿Dónde guardarían este 1?",
     "who": 5,
-    "dur": 45,
-    "body": "<div class=\"hero-copy\"><img class=\"brand\" src=\"assets/institucional/logo-horizontal-azul.png\" alt=\"Universidad Dr. Andrés Bello\"><p class=\"lead\">La era clásica y el nacimiento del silicio</p><p class=\"thesis\">Almacenar. Acceder. Corregir.</p><div class=\"team\">Carlos Alberto Campos Santos · Néstor de Jesús Ramos Membreño · Kevin Alexis Portillo Salgado<br>Ricardo Antonio Martínez Romero · Salvador Alejandro Murillo Hernández · Jaime Fernando Berríos Ortiz</div></div><div class=\"hero-period\" aria-hidden=\"true\"><b>1940</b><span>↓</span><b>1975</b><small>35 AÑOS DE DECISIONES</small></div>",
-    "text": "Buenos días, ingeniero y compañeros. Somos el equipo uno y nos corresponde la era clásica y el nacimiento del silicio, de 1940 a 1975. En este periodo, las memorias pasaron de guardar información con cargas, ondas y anillos magnéticos a integrarla en chips. Vamos a recorrer cinco hitos: cargas y líneas de retardo, ferrita, PROM, DRAM y EPROM. Nuestra idea central es que cada avance resolvió un problema, pero también tuvo sus límites. Salvador nos explicará cómo organizamos la línea de tiempo.",
-    "cue": "Pausa al saludar. Dar paso a Salvador.",
+    "dur": 42,
+    "body": "<div class=\"opening-copy\"><img class=\"brand\" src=\"assets/institucional/logo-horizontal-azul.png\" alt=\"Universidad Dr. Andrés Bello\"><p class=\"opening-line\">Mírenlo. Recuérdenlo.<br>Ahora, ¿cómo lo guardaría una máquina?</p><p class=\"opening-period\">1940–1975 / La era clásica y el nacimiento del silicio</p><p class=\"opening-invitation\">¿Cómo haría una máquina para recordarlo?</p></div><div class=\"opening-bit-stage\"><span id=\"opening-bit\" class=\"opening-bit\" data-id=\"memory-bit\">1</span><button type=\"button\" id=\"toggle-opening-bit\" aria-pressed=\"false\" aria-controls=\"opening-bit\">Ocultar el bit</button><p id=\"opening-status\" role=\"status\" aria-live=\"polite\">Recuerden este número.</p><small>EXPERIMENTO CON LA ATENCIÓN DEL GRUPO</small></div>",
+    "text": "Miren este uno. Recuérdenlo. Ahora lo ocultamos. Ustedes todavía lo recuerdan. ¿Cómo haría una computadora? Buenos días, ingeniero y compañeros. Somos el equipo uno. Hoy veremos la era clásica de las memorias, entre 1940 y 1975. Vamos a seguir el viaje de este bit: cómo se guarda, cómo se recupera y cómo se puede cambiar. Empecemos con el mapa.",
+    "cue": "Mostrar el 1 y esperar dos segundos. Ocultarlo. Hacer la pregunta; después saludar al ingeniero y al grupo. Avanzar al mapa.",
     "year": 1940,
-    "stage": "tesis",
-    "claim": "Tesis · La memoria hizo viable la computación con programas almacenados.",
+    "stage": "apertura",
+    "claim": "Un bit. Cinco soluciones. Treinta y cinco años para aprender a recordar.",
     "layout": "hero",
     "role": "El Vocero (Pitcher)",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Un bit",
+      "Equipo 1",
+      "1940–1975"
+    ],
+    "speech_parts": [
+      "Miren este uno. Recuérdenlo. Ahora lo ocultamos. Ustedes todavía lo recuerdan. ¿Cómo haría una computadora?",
+      "Buenos días, ingeniero y compañeros. Somos el equipo uno. Hoy veremos la era clásica de las memorias, entre 1940 y 1975.",
+      "Vamos a seguir el viaje de este bit: cómo se guarda, cómo se recupera y cómo se puede cambiar. Empecemos con el mapa."
+    ]
   },
   {
     "id": "mapa",
     "date": "EL RECORRIDO",
-    "title": "Una línea de tiempo, cinco decisiones",
+    "title": "El mismo bit, cinco maneras de recordar",
     "who": 4,
-    "dur": 40,
-    "body": "<p class=\"map-thesis\">Del dato que circula al programa que puede corregirse.</p><div class=\"map-key\"><span>01 / Mecanismo físico</span><span>02 / Forma de acceso</span><span>03 / Costo y límite</span></div><p class=\"hint\">Eje proporcional de 1940 a 1975 · Los hitos son seleccionables · Las tecnologías coexistieron</p>",
-    "text": "Para seguir la historia, organizamos esta línea de tiempo de 1940 a 1975. La distancia entre los puntos representa los años transcurridos, no la importancia de cada invento. Cada punto marca un hito: puede ser una idea, un producto o su uso en una computadora. Las tecnologías también coexistieron; una no reemplazó de inmediato a todas las anteriores. Carlos va a comenzar con las dificultades para guardar información en los años cuarenta.",
-    "cue": "Recorrer el eje de izquierda a derecha. Dar paso a Carlos.",
+    "dur": 27,
+    "body": "<p class=\"map-question\">El número no cambia. Lo que cambia es la huella que lo conserva.</p><div class=\"map-key\"><span>01 / ¿Dónde queda?</span><span>02 / ¿Cómo vuelve?</span><span>03 / ¿Qué cuesta cambiarlo?</span></div><p class=\"hint\">Escala temporal proporcional · Hitos seleccionables · Las tecnologías coexistieron</p>",
+    "text": "Este mapa tiene cinco paradas. Cada fecha marca un avance en la forma de guardar información. La distancia entre los puntos representa los años. Las tecnologías también coexistieron. Vamos a seguir el mismo bit en todo el recorrido. Carlos comienza con los años cuarenta.",
+    "cue": "Señalar las cinco fechas y el marcador del bit. Avanzar a la primera intervención de Carlos.",
     "year": 1940,
     "stage": "mapa",
     "claim": "Leer el eje · La posición indica fecha; la conexión explica el cambio.",
     "role": "El Maquetador y Diseñador",
-    "source": ""
+    "source": "",
+    "fallback": {
+      "who": 5,
+      "role": "El Vocero",
+      "instruccion": "Si Salvador falta, Jaime dice este mismo texto. Se conserva la lámina y el contenido del rol de diseño."
+    },
+    "memory_keys": [
+      "Cinco hitos",
+      "Fechas en orden",
+      "El mismo bit"
+    ],
+    "speech_parts": [
+      "Este mapa tiene cinco paradas. Cada fecha marca un avance en la forma de guardar información.",
+      "La distancia entre los puntos representa los años. Las tecnologías también coexistieron.",
+      "Vamos a seguir el mismo bit en todo el recorrido. Carlos comienza con los años cuarenta."
+    ]
   },
   {
     "id": "cuarenta",
     "date": "1940s · 1948 / 1949",
     "title": "Recordar era mantener algo en movimiento",
     "who": 0,
-    "dur": 44,
-    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Tubo de Williams</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Patrón de cargas en una pantalla: esquema de almacenamiento electrostático\"><circle cx=\"110\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"110\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"110\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"240\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"240\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"240\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"305\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"305\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"305\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/></svg><p>Cargas en una pantalla de rayos catódicos.</p><small>Manchester Baby · 1948</small></article><article class=\"fragment fade-up\"><h3>Retardo de mercurio</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Pulsos acústicos con circuito de recirculación\"><path d=\"M40 70H440M420 140H60V100M440 100V140\"/><path class=\"signal\" d=\"M50 70h30v-35h25v35h45v-35h25v35h65v-35h25v35h40v-35h25v35h80\"/><text x=\"240\" y=\"125\">DETECTAR → REGENERAR → RECIRCULAR</text></svg><p>Pulsos acústicos que circulan y se regeneran.</p><small>EDSAC · 1949</small></article></div><p class=\"takeaway fragment fade-up\">Dos soluciones volátiles: sin energía, se pierde la información.</p></div><!-- Video de Carlos: carlos-01-1940s.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-01-1940s.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · Cargas y ondas</p><small>Intervención 01</small></div></div>",
-    "text": "En los años cuarenta, uno de los grandes retos era mantener los datos disponibles mientras la computadora trabajaba. Se probaron dos ideas: el tubo de Williams, que guardaba cargas en una pantalla de rayos catódicos, y las líneas de retardo de mercurio, que hacían circular pulsos acústicos. Las dos necesitaban energía para conservar la información y eran difíciles de mantener. Aun así, demostraron que era posible guardar programas en memoria. Ricardo les mostrará una computadora real que utilizó líneas de retardo.",
+    "dur": 31,
+    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Tubo de Williams</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Patrón de cargas en una pantalla: esquema de almacenamiento electrostático\"><circle cx=\"110\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"110\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"110\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"175\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"240\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"240\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"240\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"305\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/><circle cx=\"305\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"305\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"35\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"77\" r=\"10\" fill=\"currentColor\" opacity=\"1\"/><circle cx=\"370\" cy=\"119\" r=\"10\" fill=\"currentColor\" opacity=\"0.15\"/></svg><p>Cargas en una pantalla de rayos catódicos.</p><small>Manchester Baby · 1948</small></article><article><h3>Retardo de mercurio</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Pulsos acústicos con circuito de recirculación\"><path d=\"M40 70H440M420 140H60V100M440 100V140\"/><path class=\"signal\" d=\"M50 70h30v-35h25v35h45v-35h25v35h65v-35h25v35h40v-35h25v35h80\"/><text x=\"240\" y=\"125\">DETECTAR → REGENERAR → RECIRCULAR</text></svg><p>Pulsos acústicos que circulan y se regeneran.</p><small>EDSAC · 1949</small></article></div><p class=\"takeaway\">Dos soluciones volátiles: sin energía, se pierde la información.</p></div><!-- Video de Carlos: carlos-01-1940s.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-01-1940s.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · Cargas y ondas</p><small>Intervención 01</small></div></div>",
+    "text": "En los años cuarenta era difícil mantener los datos mientras la computadora trabajaba. El tubo de Williams guardaba cargas en una pantalla. Las líneas de mercurio hacían circular ondas de sonido. Las dos necesitaban energía para conservar los datos. Fueron soluciones importantes, pero difíciles de mantener. Ricardo mostrará un caso real.",
     "cue": "Relacionar las dos soluciones con sus gráficos. Ricardo continúa al terminar.",
     "year": 1948,
     "stage": "origen",
@@ -48,8 +73,18 @@
       "archivo": "assets/contenido/videos/carlos-01-1940s.mp4",
       "numero": 1,
       "lamina": 3,
-      "instruccion": "Carlos: grabar por separado el texto de esta lámina. Guardar como carlos-01-1940s.mp4. Formato horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
-    }
+      "instruccion": "Carlos: grabar el texto de esta lámina. Archivo: carlos-01-1940s.mp4. Horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
+    },
+    "memory_keys": [
+      "Cargas",
+      "Ondas",
+      "Necesitan energía"
+    ],
+    "speech_parts": [
+      "En los años cuarenta era difícil mantener los datos mientras la computadora trabajaba.",
+      "El tubo de Williams guardaba cargas en una pantalla. Las líneas de mercurio hacían circular ondas de sonido.",
+      "Las dos necesitaban energía para conservar los datos. Fueron soluciones importantes, pero difíciles de mantener. Ricardo mostrará un caso real."
+    ]
   },
   {
     "id": "campo-retardo",
@@ -58,22 +93,32 @@
     "year": 1951,
     "date": "1951",
     "stage": "origen",
-    "text": "Un ejemplo real fue UNIVAC I, entregada en 1951 a la Oficina del Censo de Estados Unidos. Su memoria utilizaba siete tanques con líneas de retardo de mercurio. Los pulsos circulaban constantemente y, para recuperar un dato, había que esperar a que llegara al sensor. Era una solución grande y exigente de mantener, pero llegó a utilizarse en un sistema comercial. Carlos explicará ahora cómo la ferrita permitió seleccionar una posición sin esperar a que el dato circulara.",
+    "text": "En 1951, UNIVAC I llegó a la Oficina del Censo de Estados Unidos. Su memoria usaba siete tanques con líneas de mercurio. Los pulsos circulaban todo el tiempo. Para leer un dato había que esperar a que llegara. Era un sistema comercial, aunque grande y difícil de mantener. Carlos explica el siguiente cambio.",
     "body": "<div class=\"field-story\"><div class=\"product-wordmark\"><small>REMINGTON RAND</small><strong>UNIVAC I</strong><span>1951 / sistema comercial</span></div><div class=\"field-evidence\"><div class=\"fact\"><span>01</span><div><h3>Dónde</h3><p>Oficina del Censo de Estados Unidos.</p></div></div><div class=\"fact\"><span>02</span><div><h3>Qué memoria</h3><p>Siete tanques de líneas de retardo de mercurio.</p></div></div><div class=\"fact\"><span>03</span><div><h3>Qué demuestra</h3><p>El almacenamiento de programas llegó a un sistema de uso real.</p></div></div></div></div>",
     "claim": "Caso documentado · UNIVAC I convirtió una limitación física en un sistema utilizable.",
     "cue": "Señalar UNIVAC I y los siete tanques. Dar paso a Carlos.",
     "source": "Computer History Museum · UNIVAC / EDSAC y líneas de retardo",
-    "dur": 43,
-    "role": "El Especialista de Campo"
+    "dur": 32,
+    "role": "El Especialista de Campo",
+    "memory_keys": [
+      "UNIVAC I",
+      "Siete tanques",
+      "Esperar el dato"
+    ],
+    "speech_parts": [
+      "En 1951, UNIVAC I llegó a la Oficina del Censo de Estados Unidos.",
+      "Su memoria usaba siete tanques con líneas de mercurio. Los pulsos circulaban todo el tiempo.",
+      "Para leer un dato había que esperar a que llegara. Era un sistema comercial, aunque grande y difícil de mantener. Carlos explica el siguiente cambio."
+    ]
   },
   {
     "id": "ferrita",
     "date": "1953",
     "title": "Un anillo que recuerda sin corriente",
     "who": 0,
-    "dur": 40,
-    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Magnetismo</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Matriz de anillos de ferrita atravesados por conductores\"><path d=\"M90 15v130M40 35H440\"/><path d=\"M90 15v130M40 80H440\"/><path d=\"M90 15v130M40 125H440\"/><path d=\"M180 15v130M40 35H440\"/><path d=\"M180 15v130M40 80H440\"/><path d=\"M180 15v130M40 125H440\"/><path d=\"M270 15v130M40 35H440\"/><path d=\"M270 15v130M40 80H440\"/><path d=\"M270 15v130M40 125H440\"/><path d=\"M360 15v130M40 35H440\"/><path d=\"M360 15v130M40 80H440\"/><path d=\"M360 15v130M40 125H440\"/><circle cx=\"90\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"125\" r=\"14\" stroke-width=\"7\"/></svg><p>Dos sentidos de magnetización → dos estados.</p></article><article class=\"fragment fade-up\"><h3>Whirlwind, MIT</h3><p>Hito de adopción de memoria de núcleos de ferrita.</p><p>Acceso aleatorio y conservación sin energía.</p></article></div><p class=\"takeaway fragment fade-up\">RAM describe el acceso; no significa necesariamente volatilidad.</p></div><!-- Video de Carlos: carlos-02-ferrita.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-02-ferrita.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · Ferrita</p><small>Intervención 02</small></div></div>",
-    "text": "Esperar a que el dato recorriera una línea de mercurio limitaba el acceso. En 1953, la computadora Whirlwind del MIT incorporó memoria de núcleos de ferrita. Cada pequeño anillo conservaba un estado magnético, incluso sin alimentación. Además, se podía seleccionar una posición de la memoria. Fue un avance importante porque combinaba acceso aleatorio y conservación del dato al apagar. Néstor explicará cómo se guardaba y se leía la información dentro de esos anillos.",
+    "dur": 30,
+    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Magnetismo</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Matriz de anillos de ferrita atravesados por conductores\"><path d=\"M90 15v130M40 35H440\"/><path d=\"M90 15v130M40 80H440\"/><path d=\"M90 15v130M40 125H440\"/><path d=\"M180 15v130M40 35H440\"/><path d=\"M180 15v130M40 80H440\"/><path d=\"M180 15v130M40 125H440\"/><path d=\"M270 15v130M40 35H440\"/><path d=\"M270 15v130M40 80H440\"/><path d=\"M270 15v130M40 125H440\"/><path d=\"M360 15v130M40 35H440\"/><path d=\"M360 15v130M40 80H440\"/><path d=\"M360 15v130M40 125H440\"/><circle cx=\"90\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"125\" r=\"14\" stroke-width=\"7\"/></svg><p>Dos estados magnéticos: 0 y 1.</p></article><article><h3>Whirlwind, MIT</h3><p>Whirlwind incorporó ferrita en 1953.</p><p>Elegir una posición y conservar el dato al apagar.</p></article></div><p class=\"takeaway\">RAM describe el acceso; no significa necesariamente volatilidad.</p></div><!-- Video de Carlos: carlos-02-ferrita.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-02-ferrita.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · Ferrita</p><small>Intervención 02</small></div></div>",
+    "text": "Con el mercurio había que esperar a que llegara el dato. Hacía falta una forma más práctica de encontrarlo. En 1953, la computadora Whirlwind del MIT incorporó memoria de ferrita: pequeños anillos magnéticos. Permitía elegir una posición y conservaba los datos sin energía. Néstor explicará cómo funcionaban esos anillos.",
     "cue": "Mostrar el acceso aleatorio y la retención sin energía. Néstor continúa.",
     "year": 1953,
     "stage": "ferrita",
@@ -84,48 +129,78 @@
       "archivo": "assets/contenido/videos/carlos-02-ferrita.mp4",
       "numero": 2,
       "lamina": 5,
-      "instruccion": "Carlos: grabar por separado el texto de esta lámina. Guardar como carlos-02-ferrita.mp4. Formato horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
-    }
+      "instruccion": "Carlos: grabar el texto de esta lámina. Archivo: carlos-02-ferrita.mp4. Horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
+    },
+    "memory_keys": [
+      "1953",
+      "Anillos magnéticos",
+      "Conservan sin energía"
+    ],
+    "speech_parts": [
+      "Con el mercurio había que esperar a que llegara el dato. Hacía falta una forma más práctica de encontrarlo.",
+      "En 1953, la computadora Whirlwind del MIT incorporó memoria de ferrita: pequeños anillos magnéticos.",
+      "Permitía elegir una posición y conservaba los datos sin energía. Néstor explicará cómo funcionaban esos anillos."
+    ]
   },
   {
     "id": "carlos-01",
     "date": "LABORATORIO 01 · 1953",
     "title": "Dentro de un núcleo de ferrita",
     "who": 1,
-    "dur": 45,
-    "body": "<div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Matriz de anillos de ferrita atravesados por conductores\"><path d=\"M90 15v130M40 35H440\"/><path d=\"M90 15v130M40 80H440\"/><path d=\"M90 15v130M40 125H440\"/><path d=\"M180 15v130M40 35H440\"/><path d=\"M180 15v130M40 80H440\"/><path d=\"M180 15v130M40 125H440\"/><path d=\"M270 15v130M40 35H440\"/><path d=\"M270 15v130M40 80H440\"/><path d=\"M270 15v130M40 125H440\"/><path d=\"M360 15v130M40 35H440\"/><path d=\"M360 15v130M40 80H440\"/><path d=\"M360 15v130M40 125H440\"/><circle cx=\"90\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"125\" r=\"14\" stroke-width=\"7\"/></svg></div><ol class=\"process\"><li>Seleccionar</li><li>Detectar el cambio</li><li>Restaurar el dato</li></ol>",
-    "text": "Cada anillo de ferrita puede magnetizarse en dos sentidos para representar un cero o un uno. Los cables de selección pasan por la matriz. Cada uno aporta parte de la corriente necesaria y, en la intersección elegida, la combinación permite cambiar el estado. Para leer, se lleva el núcleo a un estado conocido: si cambia, aparece un pulso en el cable sensor. Esa lectura altera el dato, así que el circuito debe restaurarlo. Kevin explicará cómo se selecciona una dirección para leer o escribir.",
+    "dur": 33,
+    "body": "<div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Matriz de anillos de ferrita atravesados por conductores\"><path d=\"M90 15v130M40 35H440\"/><path d=\"M90 15v130M40 80H440\"/><path d=\"M90 15v130M40 125H440\"/><path d=\"M180 15v130M40 35H440\"/><path d=\"M180 15v130M40 80H440\"/><path d=\"M180 15v130M40 125H440\"/><path d=\"M270 15v130M40 35H440\"/><path d=\"M270 15v130M40 80H440\"/><path d=\"M270 15v130M40 125H440\"/><path d=\"M360 15v130M40 35H440\"/><path d=\"M360 15v130M40 80H440\"/><path d=\"M360 15v130M40 125H440\"/><circle cx=\"90\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"90\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"180\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"270\" cy=\"125\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"35\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"80\" r=\"14\" stroke-width=\"7\"/><circle cx=\"360\" cy=\"125\" r=\"14\" stroke-width=\"7\"/></svg></div><ol class=\"process\"><li>Elegir</li><li>Leer el cambio</li><li>Volver a escribir</li></ol>",
+    "text": "Cada anillo tiene dos estados magnéticos: uno representa cero y el otro, uno. Los cables seleccionan el anillo. Al leerlo, un sensor detecta si cambia su estado. Esa lectura puede cambiar el dato, así que hay que escribirlo otra vez. Podemos recordar tres pasos: elegir, leer y restaurar. Kevin mostrará cómo se elige una dirección.",
     "cue": "Señalar selección, lectura y restauración. Dar paso a Kevin.",
     "year": 1953,
     "stage": "ferrita",
     "claim": "Hardware · Magnetización → selección por corrientes → detección → restauración.",
     "role": "El Ingeniero de Hardware",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Elegir",
+      "Detectar",
+      "Restaurar"
+    ],
+    "speech_parts": [
+      "Cada anillo tiene dos estados magnéticos: uno representa cero y el otro, uno.",
+      "Los cables seleccionan el anillo. Al leerlo, un sensor detecta si cambia su estado.",
+      "Esa lectura puede cambiar el dato, así que hay que escribirlo otra vez. Podemos recordar tres pasos: elegir, leer y restaurar. Kevin mostrará cómo se elige una dirección."
+    ]
   },
   {
     "id": "direccion",
     "date": "LEER / ESCRIBIR",
     "title": "Una dirección es una ubicación",
     "who": 2,
-    "dur": 52,
+    "dur": 40,
     "body": "<div class=\"address-layout\"><div class=\"address-proof\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/direccionamiento.png\" aria-label=\"Ampliar: Dirección seleccionada y contenido leído\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/direccionamiento.png\" alt=\"Dirección seleccionada y contenido leído\"><span>↗ Ampliar evidencia</span></button><figcaption>Material docente, p. 10, fig. 6 · Braga (2024).</figcaption></figure></div><div class=\"memory-demo\" aria-label=\"Demostración conceptual de lectura y escritura\"><div class=\"demo-label\">MODELO DIDÁCTICO · 4 POSICIONES</div><div class=\"memory-cells\"><button type=\"button\" class=\"memory-cell selected\" data-address=\"0\" aria-pressed=\"true\"><small>00</small><b>10100101</b></button><button type=\"button\" class=\"memory-cell \" data-address=\"1\" aria-pressed=\"false\"><small>01</small><b>00111100</b></button><button type=\"button\" class=\"memory-cell \" data-address=\"2\" aria-pressed=\"false\"><small>10</small><b>11110000</b></button><button type=\"button\" class=\"memory-cell \" data-address=\"3\" aria-pressed=\"false\"><small>11</small><b>00001111</b></button></div><label for=\"memory-value\">Dato de 8 bits</label><input id=\"memory-value\" value=\"10100101\" inputmode=\"numeric\" pattern=\"[01]{8}\" maxlength=\"8\" aria-describedby=\"memory-status\"><div class=\"memory-actions\"><button type=\"button\" id=\"memory-read\">Leer</button><button type=\"button\" id=\"memory-write\">Escribir</button></div><p id=\"memory-status\" role=\"status\" aria-live=\"polite\">Dirección 00 seleccionada. Pulsa Leer.</p></div></div>",
-    "text": "En este esquema, la memoria se comunica mediante direcciones, datos y señales de control. La dirección indica en qué posición buscar; el control indica si vamos a leer o escribir; y las líneas de datos transportan los bits. Aquí seleccionamos la dirección cero cero y pulsamos Leer: aparece el byte guardado. Si seleccionamos cero uno y escribimos otro patrón, podemos leerlo después. Esta demostración muestra la lógica de acceso; no simula el funcionamiento eléctrico de un chip. Carlos explicará por qué surgió la PROM.",
-    "cue": "Leer 00. Seleccionar 01, escribir 01010101 y volver a leer. Dar paso a Carlos.",
+    "text": "Para usar una memoria necesitamos tres cosas: una dirección, una orden y los datos. La dirección dice dónde buscar. El control indica si leemos o escribimos. Las líneas de datos llevan el contenido. Veámoslo aquí: seleccionamos cero cero y leemos. Después elegimos cero uno, escribimos otro dato y volvemos a leerlo. Carlos continúa con PROM.",
+    "cue": "Elegir 00 y pulsar Leer. Elegir 01, escribir 01010101 y volver a leer. Dar paso a Carlos.",
     "year": 1953,
     "stage": "ferrita",
     "claim": "Lógica · Dirección selecciona; control decide la operación; datos transporta el contenido.",
     "layout": "address",
     "role": "El Analista de Lógica y Dirección",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Dirección: dónde",
+      "Control: qué hacer",
+      "Datos: contenido"
+    ],
+    "speech_parts": [
+      "Para usar una memoria necesitamos tres cosas: una dirección, una orden y los datos.",
+      "La dirección dice dónde buscar. El control indica si leemos o escribimos. Las líneas de datos llevan el contenido.",
+      "Veámoslo aquí: seleccionamos cero cero y leemos. Después elegimos cero uno, escribimos otro dato y volvemos a leerlo. Carlos continúa con PROM."
+    ]
   },
   {
     "id": "prom",
     "date": "1956",
     "title": "PROM: escribir una vez, recordar después",
     "who": 0,
-    "dur": 43,
-    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Programable una vez</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Enlaces intactos y abiertos de una PROM de fusibles\"><path d=\"M40 35H440M40 125H440M100 35v90M200 35v35m0 25v30M300 35v90M400 35v35m0 25v30\"/><text x=\"100\" y=\"150\">CONEXIÓN</text><text x=\"350\" y=\"150\">FUSIBLE ABIERTO</text></svg><p>En la PROM de fusibles, programar abre conexiones seleccionadas.</p></article><article class=\"fragment fade-up\"><h3>Persistencia</h3><p>Conserva su contenido sin alimentación.</p><p>No admite borrar y reprogramar esos fusibles.</p></article></div><p class=\"hint fragment fade-up\">1956: origen de PROM en la cronología de Micron. Las condiciones de programación dependen del dispositivo.</p></div><!-- Video de Carlos: carlos-03-prom.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-03-prom.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · PROM</p><small>Intervención 03</small></div></div>",
-    "text": "La ferrita permitía leer y escribir, pero también hacía falta conservar instrucciones fijas que el usuario pudiera definir. En una ROM fabricada con máscara, cambiar el contenido requería cambiar el diseño de fabricación, algo poco conveniente para pequeñas cantidades. La PROM permitió programar el contenido después de fabricar la memoria. Su origen se sitúa en 1956, aunque los chips comerciales llegaron después. En la versión de fusibles, el contenido queda fijado una sola vez. Néstor explicará cómo se programa.",
+    "dur": 32,
+    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>Programable una vez</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Enlaces intactos y abiertos de una PROM de fusibles\"><path d=\"M40 35H440M40 125H440M100 35v90M200 35v35m0 25v30M300 35v90M400 35v35m0 25v30\"/><text x=\"100\" y=\"150\">CONEXIÓN</text><text x=\"350\" y=\"150\">FUSIBLE ABIERTO</text></svg><p>Programar abre los fusibles elegidos.</p></article><article><h3>Sin energía</h3><p>Conserva el contenido sin energía.</p><p>No se puede borrar para corregir.</p></article></div><p class=\"hint\">1956: origen de PROM en la cronología de Micron. Las condiciones de programación dependen del dispositivo.</p></div><!-- Video de Carlos: carlos-03-prom.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-03-prom.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · PROM</p><small>Intervención 03</small></div></div>",
+    "text": "También se necesitaban memorias para instrucciones fijas. Cambiar el contenido de una ROM de fábrica podía resultar costoso en pequeñas cantidades. PROM permitió programar la memoria después de fabricarla. Su origen se ubica en 1956; los chips comerciales llegaron después. En la versión de fusibles se graba una sola vez. Néstor explicará por qué.",
     "cue": "Distinguir origen de PROM y chips comerciales posteriores. Néstor continúa.",
     "year": 1956,
     "stage": "prom",
@@ -136,8 +211,18 @@
       "archivo": "assets/contenido/videos/carlos-03-prom.mp4",
       "numero": 3,
       "lamina": 8,
-      "instruccion": "Carlos: grabar por separado el texto de esta lámina. Guardar como carlos-03-prom.mp4. Formato horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
-    }
+      "instruccion": "Carlos: grabar el texto de esta lámina. Archivo: carlos-03-prom.mp4. Horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
+    },
+    "memory_keys": [
+      "Instrucciones fijas",
+      "Programar después",
+      "Una sola vez"
+    ],
+    "speech_parts": [
+      "También se necesitaban memorias para instrucciones fijas. Cambiar el contenido de una ROM de fábrica podía resultar costoso en pequeñas cantidades.",
+      "PROM permitió programar la memoria después de fabricarla. Su origen se ubica en 1956; los chips comerciales llegaron después.",
+      "En la versión de fusibles se graba una sola vez. Néstor explicará por qué."
+    ]
   },
   {
     "id": "carlos-prom",
@@ -146,22 +231,32 @@
     "year": 1956,
     "date": "1956",
     "stage": "prom",
-    "text": "Por dentro, una PROM de fusibles tiene una matriz de conexiones que pueden abrirse al programar. Un programador aplica las condiciones eléctricas necesarias para fundir los enlaces seleccionados. El patrón queda fijo y no necesita energía para conservarse. Pero un fusible abierto no se puede reconstruir: si el programa tiene un error, no podemos borrar y volver a grabar ese mismo chip. La corriente necesaria depende del dispositivo. Carlos explicará el siguiente salto: integrar más memoria en el silicio con la DRAM.",
+    "text": "Una PROM de fusibles guarda el patrón mediante conexiones internas. El programador aplica un pulso para abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía. Pero esos fusibles no se pueden reconstruir. Si hay un error, no podemos borrar y grabar otra vez el chip. Carlos sigue con DRAM.",
     "body": "<div class=\"media-explanation\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/prom-fusibles.png\" aria-label=\"Ampliar: Programación mediante apertura de fusibles en una línea PROM\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/prom-fusibles.png\" alt=\"Programación mediante apertura de fusibles en una línea PROM\"><span>↗ Ampliar evidencia</span></button><figcaption>Material docente, p. 7, fig. 3 · Braga (2024).</figcaption></figure><div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Enlaces intactos y abiertos de una PROM de fusibles\"><path d=\"M40 35H440M40 125H440M100 35v90M200 35v35m0 25v30M300 35v90M400 35v35m0 25v30\"/><text x=\"100\" y=\"150\">CONEXIÓN</text><text x=\"350\" y=\"150\">FUSIBLE ABIERTO</text></svg></div><ol class=\"process\"><li>Seleccionar enlaces</li><li>Aplicar programación</li><li>Patrón irreversible</li></ol></div>",
     "claim": "Hardware · La permanencia del patrón se consigue mediante enlaces irreversibles.",
     "cue": "Señalar los fusibles abiertos. Dar paso a Carlos.",
-    "dur": 45,
+    "dur": 31,
     "role": "El Ingeniero de Hardware",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Seleccionar enlaces",
+      "Abrir fusibles",
+      "No se reconstruyen"
+    ],
+    "speech_parts": [
+      "Una PROM de fusibles guarda el patrón mediante conexiones internas.",
+      "El programador aplica un pulso para abrir los fusibles elegidos. Así queda fijada la información, incluso sin energía.",
+      "Pero esos fusibles no se pueden reconstruir. Si hay un error, no podemos borrar y grabar otra vez el chip. Carlos sigue con DRAM."
+    ]
   },
   {
     "id": "dram",
     "date": "1966 · IDEA / 1970 · PRODUCTO",
     "title": "DRAM: hacer espacio para más bits",
     "who": 0,
-    "dur": 45,
-    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>1966 · Robert Dennard</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Esquema conceptual de un transistor que selecciona un capacitor\"><path d=\"M30 85H160m0-35v70m20-70v70m0-35h150m0-30v60m20-60v60m0-30h85M130 20h40v25\"/><text x=\"140\" y=\"150\">TRANSISTOR</text><text x=\"340\" y=\"150\">CAPACITOR</text></svg><p>Una celda con un transistor y un capacitor.</p></article><article class=\"fragment fade-up\"><h3>1970 · Intel 1103</h3><p>Hito comercial de DRAM.</p><p>Su celda usaba tres transistores: no confundirla con la de Dennard.</p></article></div><p class=\"takeaway fragment fade-up\">Más integración, a cambio de refrescar la información.</p></div><!-- Video de Carlos: carlos-04-dram.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-04-dram.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · DRAM</p><small>Intervención 04</small></div></div>",
-    "text": "Hacia los años sesenta, aumentar la memoria de ferrita significaba añadir más anillos y conexiones. El espacio y el costo de fabricación eran una limitación. En 1966, Robert Dennard, de IBM, propuso una celda muy sencilla: un transistor y un capacitor para guardar cada bit. Esa idea ayudó a aumentar la densidad de memoria en silicio. Es importante distinguirla del Intel 1103 comercial de 1970, que usaba tres transistores por celda. Néstor explicará el principio de almacenamiento y por qué necesita refresco.",
+    "dur": 34,
+    "body": "<div class=\"historian-layout\"><div class=\"historical-evidence\"><div class=\"cards\"><article><h3>1966 · Robert Dennard</h3><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Esquema conceptual de un transistor que selecciona un capacitor\"><path d=\"M30 85H160m0-35v70m20-70v70m0-35h150m0-30v60m20-60v60m0-30h85M130 20h40v25\"/><text x=\"140\" y=\"150\">TRANSISTOR</text><text x=\"340\" y=\"150\">CAPACITOR</text></svg><p>Una celda con un transistor y un capacitor.</p></article><article><h3>1970 · Intel 1103</h3><p>Hito comercial de DRAM.</p><p>Tres transistores por celda; distinta de la idea de Dennard.</p></article></div><p class=\"takeaway\">Más integración, a cambio de refrescar la información.</p></div><!-- Video de Carlos: carlos-04-dram.mp4 --><div class=\"video-slot\" data-video=\"assets/contenido/videos/carlos-04-dram.mp4\"><span class=\"play\" aria-hidden=\"true\">▷</span><strong>CARLOS ALBERTO CAMPOS SANTOS</strong><p>Contexto histórico · DRAM</p><small>Intervención 04</small></div></div>",
+    "text": "Aumentar la memoria de ferrita exigía más anillos y conexiones. Hacía falta guardar más datos en menos espacio. En 1966, Robert Dennard propuso una celda con un transistor y un capacitor. Esto ayudó a integrar más bits en silicio. Esa idea es distinta del Intel 1103 comercial de 1970, cuya celda tenía tres transistores. Néstor explicará el refresco.",
     "cue": "Distinguir 1966 (idea) de 1970 (producto). Dar paso a Néstor.",
     "year": 1966,
     "stage": "dram",
@@ -172,23 +267,43 @@
       "archivo": "assets/contenido/videos/carlos-04-dram.mp4",
       "numero": 4,
       "lamina": 10,
-      "instruccion": "Carlos: grabar por separado el texto de esta lámina. Guardar como carlos-04-dram.mp4. Formato horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
-    }
+      "instruccion": "Carlos: grabar el texto de esta lámina. Archivo: carlos-04-dram.mp4. Horizontal 16:9; dejar dos segundos de silencio al inicio y al final."
+    },
+    "memory_keys": [
+      "Menos espacio",
+      "Dennard: 1966",
+      "Más bits por chip"
+    ],
+    "speech_parts": [
+      "Aumentar la memoria de ferrita exigía más anillos y conexiones. Hacía falta guardar más datos en menos espacio.",
+      "En 1966, Robert Dennard propuso una celda con un transistor y un capacitor. Esto ayudó a integrar más bits en silicio.",
+      "Esa idea es distinta del Intel 1103 comercial de 1970, cuya celda tenía tres transistores. Néstor explicará el refresco."
+    ]
   },
   {
     "id": "carlos-02",
     "date": "LABORATORIO 02 · 1966",
     "title": "El bit se escapa si no lo cuidamos",
     "who": 1,
-    "dur": 45,
+    "dur": 35,
     "body": "<div class=\"mechanism-diagram\"><svg class=\"technical\" viewBox=\"0 0 480 160\" role=\"img\" aria-label=\"Esquema conceptual de un transistor que selecciona un capacitor\"><path d=\"M30 85H160m0-35v70m20-70v70m0-35h150m0-30v60m20-60v60m0-30h85M130 20h40v25\"/><text x=\"140\" y=\"150\">TRANSISTOR</text><text x=\"340\" y=\"150\">CAPACITOR</text></svg></div><ol class=\"process\"><li>Almacenar carga</li><li>Compensar fugas</li><li>Refrescar periódicamente</li></ol>",
-    "text": "En la celda de un transistor y un capacitor, el bit se representa mediante la carga del capacitor. El transistor permite acceder a ella. La ventaja es que la celda ocupa poco espacio, pero el capacitor tiene fugas y pierde carga con el tiempo. Por eso el sistema debe refrescar la memoria periódicamente, restaurando los datos antes de que se pierdan. La lectura también requiere restauración. Si se corta la alimentación, la información se pierde. Ricardo mostrará cómo esta tecnología llegó al mercado.",
+    "text": "En la celda de un transistor y un capacitor, el capacitor guarda carga y el transistor permite acceder a ella. La carga se va perdiendo. Por eso hay que reponerla periódicamente: a eso le llamamos refresco. También se restaura después de leer. Si se corta la energía, los datos se pierden. Ricardo mostrará cómo llegó esta memoria al mercado.",
     "cue": "Señalar capacitor, fuga y refresco. Ricardo continúa.",
     "year": 1966,
     "stage": "dram",
     "claim": "Hardware · Una celda pequeña necesita restaurar la carga que se pierde.",
     "role": "El Ingeniero de Hardware",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Guardar carga",
+      "Refrescar",
+      "Sin energía se pierde"
+    ],
+    "speech_parts": [
+      "En la celda de un transistor y un capacitor, el capacitor guarda carga y el transistor permite acceder a ella.",
+      "La carga se va perdiendo. Por eso hay que reponerla periódicamente: a eso le llamamos refresco. También se restaura después de leer.",
+      "Si se corta la energía, los datos se pierden. Ricardo mostrará cómo llegó esta memoria al mercado."
+    ]
   },
   {
     "id": "campo-silicio",
@@ -197,119 +312,204 @@
     "year": 1971,
     "date": "1971",
     "stage": "dram",
-    "text": "En 1970, Intel lanzó el 1103, una DRAM comercial de mil veinticuatro bits, es decir, un kilobit. Fue uno de los productos que impulsaron el reemplazo de la ferrita por memoria integrada. Un caso real fue la serie HP 9800, que utilizó este chip como memoria de trabajo. El refresco añadía una tarea al sistema, pero la integración ofrecía ventajas de tamaño y costo. Así, la memoria en silicio pasó de la idea al equipo comercial. Todavía quedaba otro problema: corregir un programa almacenado de forma permanente.",
+    "text": "En 1970, Intel lanzó el 1103: una memoria dinámica de mil veinticuatro bits. Un ejemplo de uso fue la serie HP 9800. Estos equipos usaban el chip para guardar datos de trabajo. Esto mostró que la memoria en silicio ya tenía uso comercial. Pero quedaba otro problema: corregir un programa que debía conservarse al apagar.",
     "body": "<div class=\"field-story\"><div class=\"product-wordmark\"><small>INTEL / HEWLETT-PACKARD</small><strong>1103 →<br>HP 9800</strong><span>Componente → familia de equipos</span></div><div class=\"field-evidence\"><div class=\"fact\"><span>01</span><div><h3>Producto</h3><p>Intel 1103 · 1.024 bits de DRAM.</p></div></div><div class=\"fact\"><span>02</span><div><h3>Aplicación</h3><p>Serie HP 9800, documentada por el Smithsonian.</p></div></div><div class=\"fact\"><span>03</span><div><h3>Función</h3><p>Datos de trabajo; necesita alimentación y refresco.</p></div></div></div></div>",
     "claim": "Aplicación real · La integración se demuestra en productos, no solo en esquemas.",
     "cue": "Relacionar el chip Intel 1103 con la serie HP 9800.",
     "source": "Smithsonian · Intel 1103 / Computer History Museum · Semiconductors compete with cores",
-    "dur": 47,
-    "role": "El Especialista de Campo"
+    "dur": 33,
+    "role": "El Especialista de Campo",
+    "memory_keys": [
+      "Intel 1103",
+      "HP 9800",
+      "Uso comercial"
+    ],
+    "speech_parts": [
+      "En 1970, Intel lanzó el 1103: una memoria dinámica de mil veinticuatro bits.",
+      "Un ejemplo de uso fue la serie HP 9800. Estos equipos usaban el chip para guardar datos de trabajo.",
+      "Esto mostró que la memoria en silicio ya tenía uso comercial. Pero quedaba otro problema: corregir un programa que debía conservarse al apagar."
+    ]
   },
   {
     "id": "eprom",
     "date": "1971",
     "title": "EPROM: corregir sin desechar el chip",
     "who": 3,
-    "dur": 47,
+    "dur": 32,
     "body": "<div class=\"photo-story\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/eprom-ventanas.png\" aria-label=\"Ampliar: Ejemplares de EPROM con ventanas de cuarzo visibles\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/eprom-ventanas.png\" alt=\"Ejemplares de EPROM con ventanas de cuarzo visibles\"><span>↗ Ampliar evidencia</span></button><figcaption>Braga (2024), material docente, p. 11, fig. 7. Ejemplares posteriores: no son la Intel 1702 de 1971.</figcaption></figure><div class=\"photo-argument\"><p class=\"product-overline\">1971 / INTEL 1702 / DOV FROHMAN</p><h3>Conservar el programa.<br>Corregir el contenido.</h3><p>2.048 bits de memoria programable y borrable.</p><ol class=\"process\"><li>Programar</li><li>Probar</li><li>Borrar con UV</li><li>Reprogramar</li></ol></div></div>",
-    "text": "Si estábamos desarrollando un programa y cometíamos un error en una PROM de fusibles, no podíamos borrar ese contenido. En 1971, Intel presentó la EPROM 1702, diseñada por Dov Frohman, con dos mil cuarenta y ocho bits. Su ventana de cuarzo dejaba pasar luz ultravioleta para borrar el chip y volver a programarlo. El tiempo de borrado dependía del componente y del equipo utilizado. Las fotos muestran modelos posteriores para reconocer esa ventana; no son la 1702 original. Néstor explicará cómo se conserva y se elimina la carga.",
+    "text": "En 1971, Intel presentó la EPROM 1702, diseñada por Dov Frohman. Su ventana de cuarzo dejaba entrar luz ultravioleta. Así se podía borrar el chip y volver a programarlo. Las fotos muestran modelos posteriores para reconocer esa ventana. Lo importante era poder corregir el programa sin desechar la memoria. Néstor explicará el mecanismo.",
     "cue": "Señalar la ventana. Aclarar que las fotos son de modelos posteriores. Néstor continúa.",
     "year": 1971,
     "stage": "eprom",
     "claim": "Producto y aplicación · Intel 1702 permitió reutilizar memoria durante el desarrollo.",
     "layout": "photo",
     "role": "El Especialista de Campo",
-    "source": "CHM · Intel 1702, 1971 / Imagen: material docente, p. 11"
+    "source": "CHM · Intel 1702, 1971 / Imagen: material docente, p. 11",
+    "memory_keys": [
+      "Intel 1702",
+      "Ventana de cuarzo",
+      "Borrar y reutilizar"
+    ],
+    "speech_parts": [
+      "En 1971, Intel presentó la EPROM 1702, diseñada por Dov Frohman.",
+      "Su ventana de cuarzo dejaba entrar luz ultravioleta. Así se podía borrar el chip y volver a programarlo.",
+      "Las fotos muestran modelos posteriores para reconocer esa ventana. Lo importante era poder corregir el programa sin desechar la memoria. Néstor explicará el mecanismo."
+    ]
   },
   {
     "id": "carlos-03",
     "date": "LABORATORIO 03 · 1971",
     "title": "Una carga atrapada, una ventana para borrarla",
     "who": 1,
-    "dur": 45,
+    "dur": 29,
     "body": "<div class=\"media-explanation\"><figure class=\"evidence-figure\"><button class=\"image-zoom\" type=\"button\" data-evidence=\"assets/contenido/imagenes/borrador-uv.png\" aria-label=\"Ampliar: Borrador ultravioleta para memorias EPROM\"><img class=\"institutional-image\" src=\"assets/contenido/imagenes/borrador-uv.png\" alt=\"Borrador ultravioleta para memorias EPROM\"><span>↗ Ampliar evidencia</span></button><figcaption>Material docente, p. 11, fig. 8 · Ilustración del procedimiento; no corresponde al equipo original de 1971.</figcaption></figure><div class=\"mechanism-stages\"><p><b>01</b> Introducir carga eléctricamente</p><p><b>02</b> Conservarla en una compuerta aislada</p><p><b>03</b> Retirarla mediante luz UV</p></div></div>",
-    "text": "La EPROM utiliza una compuerta flotante aislada dentro del transistor. Al programarla, se introduce carga que queda almacenada y cambia la respuesta del transistor durante la lectura. Como esa carga está aislada, el contenido permanece sin energía. Para borrar, la luz ultravioleta entra por la ventana y permite retirar la carga almacenada. En el procedimiento habitual se borra todo el chip y luego se programa otra vez eléctricamente. Así podemos reutilizar la memoria, siguiendo las condiciones del fabricante. Kevin comparará ahora las cuatro tecnologías.",
+    "text": "La EPROM guarda carga en una parte aislada del transistor, llamada compuerta flotante. Esa carga cambia cómo responde el transistor y permanece sin energía. La luz ultravioleta permite retirar la carga. Se borra todo el chip y después se programa otra vez eléctricamente. Kevin comparará estas memorias.",
     "cue": "Distinguir programación eléctrica y borrado UV. Kevin continúa.",
     "year": 1971,
     "stage": "eprom",
     "claim": "Hardware · La carga aislada conserva datos; la luz UV permite el borrado.",
     "role": "El Ingeniero de Hardware",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Carga aislada",
+      "Conserva el dato",
+      "Luz UV borra"
+    ],
+    "speech_parts": [
+      "La EPROM guarda carga en una parte aislada del transistor, llamada compuerta flotante.",
+      "Esa carga cambia cómo responde el transistor y permanece sin energía.",
+      "La luz ultravioleta permite retirar la carga. Se borra todo el chip y después se programa otra vez eléctricamente. Kevin comparará estas memorias."
+    ]
   },
   {
     "id": "comparacion",
     "date": "1971 / COMPARAR OPERACIONES",
     "title": "Cuatro memorias, decisiones diferentes",
     "who": 2,
-    "dur": 46,
-    "body": "<table class=\"decision-table\"><thead><tr><th>Memoria</th><th>Sin energía</th><th>Lectura / escritura</th><th>Borrado y mantenimiento</th></tr></thead><tbody><tr><td>Ferrita</td><td>Conserva</td><td>Lectura con restauración</td><td>Reescritura del estado</td></tr><tr><td>PROM de fusibles</td><td>Conserva</td><td>Una programación</td><td>Sin borrado reutilizable</td></tr><tr><td>DRAM</td><td>Pierde</td><td>Lectura y escritura</td><td>Refresco periódico</td></tr><tr><td>EPROM</td><td>Conserva</td><td>Programación eléctrica</td><td>Borrado UV del chip</td></tr></tbody></table>",
-    "text": "Si comparamos las cuatro tecnologías, la ferrita conserva el dato sin energía y permite leer y escribir, pero la lectura exige restauración. La PROM de fusibles también conserva el contenido, aunque solo se programa una vez. La DRAM permite trabajar con datos que cambian y favorece la integración, pero pierde la información al apagar y necesita refresco. La EPROM conserva el programa y permite reutilizar el chip después de borrarlo con luz ultravioleta. Cada una responde a una necesidad diferente. Veamos cómo elegir con un ejemplo.",
+    "dur": 34,
+    "body": "<table class=\"decision-table\"><thead><tr><th>Memoria</th><th>Sin energía</th><th>Lectura / escritura</th><th>Borrado y mantenimiento</th></tr></thead><tbody><tr><td>Ferrita</td><td>Conserva</td><td>Lectura con restauración</td><td>Volver a escribir</td></tr><tr><td>PROM de fusibles</td><td>Conserva</td><td>Una programación</td><td>No se puede borrar</td></tr><tr><td>DRAM</td><td>Pierde</td><td>Lectura y escritura</td><td>Refresco periódico</td></tr><tr><td>EPROM</td><td>Conserva</td><td>Se graba eléctricamente</td><td>Borrado UV del chip</td></tr></tbody></table>",
+    "text": "La ferrita conserva los datos, pero hay que restaurarlos después de leer. La PROM de fusibles conserva el contenido, pero solo se graba una vez. La DRAM permite cambiar los datos, aunque necesita energía y refresco. La EPROM conserva el programa y se puede reutilizar después de borrarla con luz ultravioleta. Cada memoria sirve para una necesidad.",
     "cue": "Comparar las filas usando los mismos criterios.",
     "year": 1971,
     "stage": "eprom",
     "claim": "Lógica · Acceso, retención y modificación son propiedades independientes.",
     "role": "El Analista de Lógica y Dirección",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Ferrita: restaurar",
+      "PROM: una vez",
+      "DRAM / EPROM"
+    ],
+    "speech_parts": [
+      "La ferrita conserva los datos, pero hay que restaurarlos después de leer.",
+      "La PROM de fusibles conserva el contenido, pero solo se graba una vez. La DRAM permite cambiar los datos, aunque necesita energía y refresco.",
+      "La EPROM conserva el programa y se puede reutilizar después de borrarla con luz ultravioleta. Cada memoria sirve para una necesidad."
+    ]
   },
   {
     "id": "reto",
     "date": "ELIGE UNA MEMORIA",
     "title": "¿Qué usarías para guardar un programa corregible?",
     "who": 2,
-    "dur": 49,
+    "dur": 35,
     "body": "<div class=\"quiz\"><button data-answer=\"no\">DRAM</button><button data-answer=\"no\">PROM de fusibles</button><button data-answer=\"yes\">EPROM</button></div><p id=\"quiz-feedback\" role=\"status\" aria-live=\"polite\">Debe conservar el programa al apagar y permitir volver a grabarlo.</p>",
-    "text": "Imaginemos que estamos en 1973 desarrollando un programa para un sistema con microprocesador. Debe conservarse al apagar, pero sabemos que tendremos que corregirlo. Podemos utilizar un programador y un borrador ultravioleta. ¿Cuál opción elegirían? La DRAM pierde el contenido al apagar. La PROM de fusibles no permite borrar un error. La opción adecuada es EPROM: conserva el programa y permite borrarlo y volver a grabarlo, dentro de las condiciones de uso del componente. Elegimos por lo que necesita el sistema, no solo por la fecha.",
-    "cue": "Pausar cuatro segundos antes de responder. Seleccionar EPROM.",
+    "text": "Imaginemos que estamos en 1973. Necesitamos un programa que se conserve al apagar, pero que podamos corregir. Tenemos programador y borrador ultravioleta. ¿Cuál elegirían? La DRAM pierde el contenido al apagar. La PROM de fusibles no permite borrar un error. La respuesta es EPROM: conserva el programa y permite borrarlo para volver a grabarlo.",
+    "cue": "Hacer la pregunta. Esperar cuatro segundos. Seleccionar EPROM y dar la respuesta.",
     "year": 1971,
     "stage": "eprom",
     "claim": "Defensa aplicada · La respuesta debe satisfacer retención y posibilidad de corrección.",
     "role": "El Analista de Lógica y Dirección",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Debe conservar",
+      "Debe corregirse",
+      "Elegir EPROM"
+    ],
+    "speech_parts": [
+      "Imaginemos que estamos en 1973. Necesitamos un programa que se conserve al apagar, pero que podamos corregir. Tenemos programador y borrador ultravioleta.",
+      "¿Cuál elegirían? La DRAM pierde el contenido al apagar. La PROM de fusibles no permite borrar un error.",
+      "La respuesta es EPROM: conserva el programa y permite borrarlo para volver a grabarlo."
+    ]
   },
   {
     "id": "balance",
-    "title": "La historia se entiende al conectar los hitos",
+    "title": "El viaje de nuestro bit",
     "who": 4,
     "year": 1975,
     "date": "1975",
     "stage": "balance",
-    "text": "Al ver la línea completa, se entiende la evolución. En los años cuarenta, el reto era mantener los bits disponibles. Con la ferrita se combinaron acceso aleatorio y conservación sin energía. Con PROM se fijaron programas. La idea de DRAM favoreció una mayor densidad en silicio. Y con EPROM se pudo corregir el contenido sin desechar el chip. En cada punto ganamos una posibilidad y aceptamos una condición técnica. Jaime cerrará con las conclusiones del equipo.",
-    "body": "<div class=\"legacy-track\"><div><span>1940s</span><b>Cargas y ondas</b><p>Representar y recuperar</p><small>Regeneración y espera</small></div><div><span>1953</span><b>Ferrita</b><p>Persistencia y selección</p><small>Lectura con restauración</small></div><div><span>1956</span><b>PROM</b><p>Fijar un programa</p><small>Programación irreversible</small></div><div><span>1966</span><b>DRAM</b><p>Integrar más celdas</p><small>Fugas y refresco</small></div><div><span>1971</span><b>EPROM</b><p>Corregir y reutilizar</p><small>Borrado UV del chip</small></div></div>",
+    "text": "Nuestro bit empezó como una carga o una onda. Con ferrita pudo conservarse sin energía. PROM fijó el programa. DRAM ayudó a guardar más bits en silicio. EPROM permitió borrar y corregir. Cada avance resolvió un problema y tuvo una condición. Ese es el recorrido que nos lleva a la conclusión.",
+    "body": "<div class=\"legacy-track\"><div><span>1940s</span><b>Cargas y ondas</b><p>Guardar el bit</p><small>Regeneración y espera</small></div><div><span>1953</span><b>Ferrita</b><p>Sin energía y selección</p><small>Lectura con restauración</small></div><div><span>1956</span><b>PROM</b><p>Fijar un programa</p><small>Se graba una vez</small></div><div><span>1966</span><b>DRAM</b><p>Más bits por chip</p><small>Fugas y refresco</small></div><div><span>1971</span><b>EPROM</b><p>Corregir y reutilizar</p><small>Borrado UV del chip</small></div></div>",
     "claim": "Síntesis visual · Cada hito incorpora una posibilidad y conserva una condición técnica.",
-    "cue": "Recorrer los cinco hitos. Dar paso a Jaime.",
-    "dur": 42,
+    "cue": "Señalar aporte y costo en los cinco hitos. Continuar a la conclusión.",
+    "dur": 31,
     "role": "El Maquetador y Diseñador",
-    "source": ""
+    "source": "",
+    "fallback": {
+      "who": 5,
+      "role": "El Vocero",
+      "instruccion": "Si Salvador falta, Jaime dice este mismo texto. Se conserva la lámina y el contenido del rol de diseño."
+    },
+    "memory_keys": [
+      "Sostener",
+      "Conservar",
+      "Corregir"
+    ],
+    "speech_parts": [
+      "Nuestro bit empezó como una carga o una onda. Con ferrita pudo conservarse sin energía.",
+      "PROM fijó el programa. DRAM ayudó a guardar más bits en silicio. EPROM permitió borrar y corregir.",
+      "Cada avance resolvió un problema y tuvo una condición. Ese es el recorrido que nos lleva a la conclusión."
+    ]
   },
   {
     "id": "cierre",
     "date": "1975 · BALANCE DE LA ERA",
-    "title": "La memoria hizo posible el programa",
+    "title": "El reto no era mostrarlo. Era recuperarlo.",
     "who": 5,
-    "dur": 44,
-    "body": "<div class=\"closing\"><p><b>Almacenar</b><span>Convertir un fenómeno físico en un bit recuperable.</span></p><p class=\"fragment fade-up\"><b>Acceder</b><span>Seleccionar, leer y preservar la información.</span></p><p class=\"fragment fade-up\"><b>Corregir</b><span>Modificar el contenido sin empezar siempre de cero.</span></p></div><p class=\"takeaway\">El progreso de la memoria es una historia de decisiones de ingeniería.</p>",
-    "text": "Como equipo, defendemos que estos treinta y cinco años fueron fundamentales para la evolución de las memorias. En esta etapa se desarrollaron soluciones prácticas para conservar información, acceder a ella y modificar programas. Cada tecnología aportó algo distinto: desde sostener pulsos hasta integrar celdas en silicio o reutilizar una memoria borrable. Las tecnologías posteriores ampliaron esas posibilidades. Nuestra conclusión es que el progreso no consistió en encontrar una memoria perfecta, sino en disponer de mejores opciones para cada necesidad. Muchas gracias.",
-    "cue": "Pausa antes de la conclusión. Continuar a referencias.",
+    "dur": 33,
+    "body": "<div class=\"closing\"><p><b>Conservar</b><span>Dejar una huella física que represente el bit.</span></p><p class=\"fragment fade-up\"><b>Recuperar</b><span>Encontrar y leer el dato cuando se necesita.</span></p><p class=\"fragment fade-up\"><b>Corregir</b><span>Cambiar el contenido bajo condiciones definidas.</span></p></div><p class=\"takeaway\">El mismo 1. Distintas soluciones de ingeniería.</p>",
+    "text": "Volvamos al uno del inicio. Para recordarlo, una computadora necesita dejar una huella física y poder leerla. En esta era se construyeron distintas formas de guardar, encontrar y cambiar información. Lo vimos en los mecanismos y en equipos reales. Por eso defendemos que fue una etapa fundamental: dio más opciones para resolver cada necesidad. Muchas gracias.",
+    "cue": "Retomar el experimento del uno y las tres capacidades del cierre. Pausa al terminar. Avanzar a referencias.",
     "year": 1975,
     "stage": "balance",
     "claim": "Defensa final · Esta era estableció las decisiones fundamentales del almacenamiento.",
     "layout": "closing",
     "role": "El Vocero (Pitcher)",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "El mismo 1",
+      "Distintas soluciones",
+      "Una base fundamental"
+    ],
+    "speech_parts": [
+      "Volvamos al uno del inicio. Para recordarlo, una computadora necesita dejar una huella física y poder leerla.",
+      "En esta era se construyeron distintas formas de guardar, encontrar y cambiar información. Lo vimos en los mecanismos y en equipos reales.",
+      "Por eso defendemos que fue una etapa fundamental: dio más opciones para resolver cada necesidad. Muchas gracias."
+    ]
   },
   {
     "id": "referencias",
     "date": "FUENTES",
     "title": "Las fechas cuentan historias distintas",
     "who": 5,
-    "dur": 25,
+    "dur": 23,
     "body": "<div class=\"reference-columns\"><ul class=\"sources\"><li><a href=\"https://www.computerhistory.org/storageengine/edsac-computer-employs-delay-line-storage/\" target=\"_blank\" rel=\"noopener\">Computer History Museum · EDSAC y retardo, 1949 ↗</a></li><li><a href=\"https://www.computerhistory.org/storageengine/whirlwind-computer-debuts-core-memory/\" target=\"_blank\" rel=\"noopener\">Computer History Museum · Whirlwind y ferrita, 1953 ↗</a></li><li><a href=\"https://old.hotchips.org/wp-content/uploads/hc_archives/hc28/HC28.21-Tutorial-Epub/HC28.21.1-Next-Gen-Memory-Epub/HC28.21.110-Memory-Horizon-Pawlowski-microni-v1-t1-2.pdf\" target=\"_blank\" rel=\"noopener\">Micron · Memory as We Approach a New Horizon, 2016 (cronología) ↗</a></li><li><a href=\"https://www.ibm.com/history/dram\" target=\"_blank\" rel=\"noopener\">IBM · Dynamic random-access memory ↗</a></li><li><a href=\"https://www.computerhistory.org/storageengine/reusable-semiconductor-rom-introduced/\" target=\"_blank\" rel=\"noopener\">Computer History Museum · EPROM, 1971 ↗</a></li><li><a href=\"https://www.intel.com/content/www/us/en/history/virtual-vault/articles/eprom.html\" target=\"_blank\" rel=\"noopener\">Intel · A Success Out of Quality Control Issues ↗</a></li><li><a href=\"https://www.computerhistory.org/revolution/story/100\" target=\"_blank\" rel=\"noopener\">Computer History Museum · UNIVAC I, aplicación comercial ↗</a></li><li><a href=\"https://www.si.edu/object/intel-1103-1k-bit-pmos-dynamic-random-access-memory-dram%3Anmah_713496\" target=\"_blank\" rel=\"noopener\">Smithsonian · Intel 1103 y serie HP 9800 ↗</a></li><li><a href=\"https://www.computerhistory.org/storageengine/semiconductors-compete-with-magnetic-cores/\" target=\"_blank\" rel=\"noopener\">Computer History Museum · DRAM comercial, 1970 ↗</a></li></ul><p class=\"hint\">Base docente: info/EQUIPOS DE HITOS DE MEMORIAS.md y el PDF de tecnologías de memoria.<br>Los enlaces son consulta opcional; la presentación no requiere conexión.</p></div>",
-    "text": "Para esta exposición utilizamos el material de la cátedra y fuentes históricas de IBM, Intel, el Computer History Museum y el Smithsonian. Las imágenes extraídas del material tienen su atribución indicada. Quedamos atentos a las preguntas del ingeniero y de los compañeros.",
+    "text": "Utilizamos el material de la cátedra y fuentes de IBM, Intel, el Computer History Museum y el Smithsonian. Las imágenes tienen su fuente indicada. Quedamos atentos a las preguntas del ingeniero y de los compañeros.",
     "cue": "Dejar visibles las fuentes y abrir el espacio de preguntas.",
     "year": 1975,
     "stage": "balance",
     "claim": "Fuentes · Historia técnica, productos identificados y procedencia de las imágenes.",
     "role": "El Vocero (Pitcher)",
-    "source": ""
+    "source": "",
+    "memory_keys": [
+      "Material docente",
+      "Fuentes históricas",
+      "Preguntas"
+    ],
+    "speech_parts": [
+      "Utilizamos el material de la cátedra y fuentes de IBM, Intel, el Computer History Museum y el Smithsonian.",
+      "Las imágenes tienen su fuente indicada.",
+      "Quedamos atentos a las preguntas del ingeniero y de los compañeros."
+    ]
   }
 ]

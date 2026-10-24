@@ -40,3 +40,22 @@ for i,z in enumerate(S,1):
 assert raw.count('LÁMINA ')==19
 assert 'Preguntas para sostener'not in raw and 'Responsabilidades y evidencia'not in raw
 print('OK: 19 discursos completos e idénticos en notas, HTML y PDF; 6 roles; 4 grabaciones de Carlos en 3, 5, 8 y 10.')
+
+assert [i for i,z in enumerate(S,1) if z.get('fallback')]==[2,17]
+assert all(z['fallback']['who']==5 and z['who']==4 for z in S if z.get('fallback'))
+assert all('Salvador' not in z['text'] for z in S if z['who']!=4)
+assert re.search(r'\btesis\b',(ROOT/'index.html').read_text(),re.I) is None
+assert re.search(r'\btesis\b',raw,re.I) is None
+for z in S:
+ if z.get('fallback'):assert normalized(z['fallback']['instruccion']) in pdf
+print('OK: apertura participativa, rótulo eliminado y suplencia de Jaime en mapa y síntesis.')
+
+assert 'Buenos días, ingeniero y compañeros.' in S[0]['text']
+assert S[0]['text'].index('Ahora lo ocultamos') < S[0]['text'].index('Buenos días')
+for z in S:
+ assert len(z['memory_keys'])==len(z['speech_parts'])==3
+ assert ' '.join(z['speech_parts'])==z['text']
+ assert len(z['text'].split())<=80
+ for key in z['memory_keys']:assert normalized(key) in pdf
+assert (ROOT/'index.html').read_text().count('aria-label="Ideas principales"')==19
+print('OK: gancho antes del saludo; 19 intervenciones de tres ideas y hasta 80 palabras; claves compartidas en láminas y guion.')

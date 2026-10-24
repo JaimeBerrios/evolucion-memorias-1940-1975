@@ -26,7 +26,7 @@
         "titulo": "DRAM: hacer espacio para más bits"
       }
     ],
-    "segundos_estimados": 172,
+    "segundos_estimados": 127,
     "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
   },
   {
@@ -56,7 +56,7 @@
         "titulo": "Una carga atrapada, una ventana para borrarla"
       }
     ],
-    "segundos_estimados": 180,
+    "segundos_estimados": 128,
     "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
   },
   {
@@ -81,7 +81,7 @@
         "titulo": "¿Qué usarías para guardar un programa corregible?"
       }
     ],
-    "segundos_estimados": 147,
+    "segundos_estimados": 109,
     "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
   },
   {
@@ -106,7 +106,7 @@
         "titulo": "EPROM: corregir sin desechar el chip"
       }
     ],
-    "segundos_estimados": 137,
+    "segundos_estimados": 97,
     "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
   },
   {
@@ -118,16 +118,17 @@
       {
         "id": "mapa",
         "lamina": 2,
-        "titulo": "Una línea de tiempo, cinco decisiones"
+        "titulo": "El mismo bit, cinco maneras de recordar"
       },
       {
         "id": "balance",
         "lamina": 17,
-        "titulo": "La historia se entiende al conectar los hitos"
+        "titulo": "El viaje de nuestro bit"
       }
     ],
-    "segundos_estimados": 82,
-    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
+    "segundos_estimados": 58,
+    "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo.",
+    "suplencia": "Si falta Salvador, Jaime expone las láminas 2 y 17 con el mismo texto. Se mantienen mapa y síntesis visual."
   },
   {
     "nombre": "Jaime Fernando Berríos Ortiz",
@@ -138,12 +139,12 @@
       {
         "id": "portada",
         "lamina": 1,
-        "titulo": "Antes del chip, el reto era recordar"
+        "titulo": "¿Dónde guardarían este 1?"
       },
       {
         "id": "cierre",
         "lamina": 18,
-        "titulo": "La memoria hizo posible el programa"
+        "titulo": "El reto no era mostrarlo. Era recuperarlo."
       },
       {
         "id": "referencias",
@@ -151,7 +152,7 @@
         "titulo": "Las fechas cuentan historias distintas"
       }
     ],
-    "segundos_estimados": 114,
+    "segundos_estimados": 98,
     "alcance_de_verificacion": "Texto y responsabilidades sincronizados; duración pendiente de ensayo."
   }
 ]

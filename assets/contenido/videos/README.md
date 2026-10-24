@@ -1,14 +1,14 @@
 # Videos de Carlos · historiador
 
-Guardar los cuatro archivos en esta carpeta. Su discurso completo y las indicaciones de grabación están en el guion PDF.
+Grabar el discurso natural de cada lámina en tres ideas. Las claves son apoyo para recordar; no hay que leer las pautas.
 
-| Lámina | Archivo | Tema | Tiempo oral aprox. |
+| Lámina | Archivo | Claves | Tiempo aprox. |
 |---|---|---|---|
-| 03 | carlos-01-1940s.mp4 | Recordar era mantener algo en movimiento | 44 s |
-| 05 | carlos-02-ferrita.mp4 | Un anillo que recuerda sin corriente | 40 s |
-| 08 | carlos-03-prom.mp4 | PROM: escribir una vez, recordar después | 43 s |
-| 10 | carlos-04-dram.mp4 | DRAM: hacer espacio para más bits | 45 s |
+| 03 | carlos-01-1940s.mp4 | Cargas / Ondas / Necesitan energía | 31 s |
+| 05 | carlos-02-ferrita.mp4 | 1953 / Anillos magnéticos / Conservan sin energía | 30 s |
+| 08 | carlos-03-prom.mp4 | Instrucciones fijas / Programar después / Una sola vez | 32 s |
+| 10 | carlos-04-dram.mp4 | Menos espacio / Dennard: 1966 / Más bits por chip | 34 s |
 
-Grabar en horizontal 16:9, preferentemente MP4 H.264/AAC, con voz clara y dos segundos de silencio al inicio y al final. Grabar solo el discurso, sin leer las pautas ni las instrucciones. Cada archivo corresponde a una intervención completa y termina con el relevo al compañero.
+Formato horizontal 16:9, preferentemente MP4 H.264/AAC. Dejar dos segundos de silencio al inicio y al final. El discurso actualizado está en documentos/guion-equipo-1.pdf y en su versión HTML.
 
-Recargar index.html después de copiar los archivos. Se reproducen manualmente con los controles y se pausan al cambiar de lámina. Si falta el archivo, permanece el marcador. Las láminas de hardware de Néstor contienen diagramas y no llevan videos de Carlos.
+Copiar los archivos en esta carpeta y recargar index.html. El reproductor se muestra cuando el archivo se puede leer; si falta, queda el marcador. Reproducir manualmente. Se pausa al cambiar de lámina.

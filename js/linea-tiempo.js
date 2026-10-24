@@ -84,3 +84,50 @@ document.getElementById('reiniciar-presentacion').addEventListener('click', () =
   document.getElementById('quiz-feedback').textContent = 'Debe conservar el programa al apagar y permitir volver a grabarlo.';
   document.querySelectorAll('video').forEach(player => { player.pause(); player.currentTime = 0; });
 });
+
+// La apertura oculta un símbolo; no pretende simular un corte eléctrico real.
+const openingBit = document.getElementById('opening-bit');
+const openingButton = document.getElementById('toggle-opening-bit');
+const openingStatus = document.getElementById('opening-status');
+function resetOpeningBit() {
+  if (!openingBit) return;
+  openingBit.classList.remove('concealed');
+  openingBit.setAttribute('aria-hidden', 'false');
+  openingButton.setAttribute('aria-pressed', 'false');
+  openingButton.textContent = 'Ocultar el bit';
+  openingStatus.textContent = 'Recuerden este número.';
+}
+if (openingButton) {
+  openingButton.addEventListener('click', () => {
+    const concealed = openingButton.getAttribute('aria-pressed') !== 'true';
+    openingBit.classList.toggle('concealed', concealed);
+    openingBit.setAttribute('aria-hidden', String(concealed));
+    openingButton.setAttribute('aria-pressed', String(concealed));
+    openingButton.textContent = concealed ? 'Volver a mostrar' : 'Ocultar el bit';
+    openingStatus.textContent = concealed ? 'Ya no se ve. ¿Dónde quedó guardado?' : 'Recuerden este número.';
+  });
+  document.getElementById('reiniciar-presentacion').addEventListener('click', resetOpeningBit);
+}
+
+// El mismo discurso cubre el mapa y la síntesis si Salvador no participa.
+const replacementButton = document.getElementById('alternar-suplencia');
+const replacementSlides = [...document.querySelectorAll('[data-suplente]')];
+replacementSlides.forEach(slide => {
+  slide.dataset.expositorTitular = slide.dataset.expositor;
+  slide.dataset.rolTitular = slide.querySelector('.role-tag').textContent;
+});
+function setReplacementMode(active) {
+  replacementSlides.forEach(slide => {
+    slide.dataset.expositor = active ? slide.dataset.suplente : slide.dataset.expositorTitular;
+    slide.querySelector('.role-tag').textContent = active ? slide.dataset.rolSuplente : slide.dataset.rolTitular;
+  });
+  if (replacementButton) {
+    replacementButton.setAttribute('aria-pressed', String(active));
+    replacementButton.textContent = active ? 'Restaurar participación de Salvador' : 'Activar suplencia de Salvador';
+  }
+  if (typeof actualizarPie === 'function') actualizarPie();
+}
+if (replacementButton) {
+  replacementButton.addEventListener('click', () => setReplacementMode(replacementButton.getAttribute('aria-pressed') !== 'true'));
+  setReplacementMode(new URLSearchParams(window.location.search).get('suplencia') === '1');
+}

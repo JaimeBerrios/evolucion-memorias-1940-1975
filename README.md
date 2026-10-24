@@ -82,7 +82,7 @@ Puedes abrir directamente los archivos HTML en tu navegador web favorito:
 - Salvador: mapa y síntesis visual (2, 17).
 - Jaime: vocero (1, 18, 19).
 
-El guion PDF tiene 7 páginas: qué decir en cada lámina, una pauta breve y las instrucciones para las cuatro grabaciones de Carlos. Sin portada extensa ni anexos teóricos. El mismo discurso está en el guion HTML y las notas Reveal (S). Duración orientativa: unos 14 minutos, pendiente de ensayo.
+El guion PDF tiene 9 páginas: qué decir en cada lámina, una pauta breve y las instrucciones para las cuatro grabaciones de Carlos. Sin portada extensa ni anexos teóricos. El mismo discurso está en el guion HTML y las notas Reveal (S). Duración orientativa: 10–11 minutos, pendiente de ensayo.
 
 Para compilar y verificar:
 
@@ -94,4 +94,28 @@ Documentación de uso: `documentos/instrucciones-compilacion.md`. Prompt para co
 
 Las cuatro imágenes necesarias ya están extraídas en `assets/contenido/imagenes/`, con atribución y procedencia. No hace falta descargar otras para completar el contenido actual. Las fotografías de EPROM corresponden a ejemplares posteriores y se utilizan para ilustrar la ventana de cuarzo.
 
-El comando de compilación verifica igualdad de los 19 discursos en las notas, el HTML y el texto extraído del PDF; correspondencia de expositores y roles; y ubicación de los videos en 3, 5, 8 y 10. Se renderizaron e inspeccionaron las siete páginas del PDF. La revisión visual e interactiva de las láminas en un navegador real y la reproducción de los videos finales siguen pendientes.
+El comando de compilación verifica igualdad de los 19 discursos en las notas, el HTML y el texto extraído del PDF; correspondencia de expositores y roles; y ubicación de los videos en 3, 5, 8 y 10. Se renderizaron e inspeccionaron las nueve páginas del PDF. La revisión visual e interactiva de las láminas en un navegador real y la reproducción de los videos finales siguen pendientes.
+
+### Apertura participativa y continuidad del equipo
+
+La primera lámina muestra un 1, permite ocultarlo y pregunta dónde guardarlo sin chips. El símbolo continúa en el eje temporal y el cierre recupera el experimento. El discurso inicia con la acción del grupo y no con una lista de tecnologías.
+
+Salvador mantiene sus responsabilidades de mapa y síntesis (láminas 2 y 17). Si no participa, Jaime lee esos mismos textos. La apertura y los relevos no dependen de anunciar a Salvador. Se conserva toda la cobertura del diseño visual y no se eliminan láminas.
+
+Antes de exponer, abrir Ayuda y pulsar «Activar suplencia de Salvador», o abrir `index.html?suplencia=1`. Los pies y las etiquetas de expositor de las dos láminas pasan a Jaime. El botón permite restaurar a Salvador. El guion PDF y HTML indican esta alternativa junto a cada intervención; la matriz de reparto la documenta.
+
+Se verificó la lógica de ocultar/mostrar el bit, su reinicio y los dos modos de suplencia con un DOM simulado. La comprobación visual en navegador real y el ensayo del grupo continúan pendientes.
+
+### Guion fácil de seguir
+
+El gancho del 1 va primero. Después Jaime saluda al ingeniero y al grupo, identifica al equipo y presenta el recorrido. Las 19 intervenciones tienen tres bloques cortos y hasta 80 palabras. Las tres claves de cada intervención aparecen en la lámina, el guion y las notas para ayudar a retomar el hilo.
+
+El PDF tiene nueve páginas y conserva las pautas, las cuatro grabaciones de Carlos y la suplencia de Jaime en 2 y 17. El discurso total tiene unas mil palabras; el tiempo orientativo, incluidas las pausas de trabajo, es de 10–11 minutos y debe confirmarse en ensayo. No se ha fijado una duración mínima de la consigna.
+
+### Diseño de la presentación
+
+La hoja `css/presentacion.css` usa una composición única de 1280 × 720: encabezado, contenido central, eje cronológico inferior y tres palabras clave. Las fotografías conservan su proporción; las cuatro grabaciones tienen marco 16:9. El mecanismo de PROM agrupa diagrama y pasos en una misma columna.
+
+`js/diseno.js` coordina entradas de 320 ms y retrasos de hasta 220 ms por grupos. Reveal Auto-Animate conserva las posiciones de las fechas y mueve el bit y el progreso del eje. Las entradas no bloquean los controles, no se repiten en bucle y se cancelan al navegar, pausar o abrir la vista general. Se respeta la preferencia de movimiento reducido. El cierre no exige clics adicionales para mostrar sus tres capacidades.
+
+Se comprobó que los textos de las 19 láminas, discursos, claves, pautas y roles permanecen iguales; el PDF y el guion HTML conservan su contenido y sus archivos sin modificaciones. Se verificaron la sintaxis JavaScript y la lógica de las animaciones con un DOM simulado. El intento de abrir Chrome headless falló por una restricción del entorno (`shutdown: Operation not permitted`), por lo que la inspección visual en navegador real continúa pendiente.

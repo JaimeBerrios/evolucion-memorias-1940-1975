@@ -37,7 +37,10 @@ def newpage():
  c.set_font_size(8);c.move_to(50,811);c.show_text('Leer el discurso. Las pautas e indicaciones de grabación no se dicen en voz alta.');c.move_to(530,811);c.show_text(str(page));y=103
 
 for i,s in enumerate(S,1):
- blocks=[(f'LÁMINA {i:02} · {s["dur"]} s aprox.',9,True),(s['title'],15,True),(E[s['who']]['nombre']+' · '+s['role'],10,True),(s['text'],11,False),('Pauta: '+s['cue'],9,False)]
+ blocks=[(f'LÁMINA {i:02} · {s["dur"]} s aprox.',9,True),(s['title'],15,True),(E[s['who']]['nombre']+' · '+s['role'],10,True),('Claves: '+' / '.join(s['memory_keys']),10,True)]
+ blocks.extend((part,11,False) for part in s['speech_parts'])
+ blocks.append(('Pauta: '+s['cue'],9,False))
+ if s.get('fallback'):blocks.append((s['fallback']['instruccion'],9,True))
  if s.get('recording'):blocks.append((s['recording']['instruccion'],9,True))
  h=sum(len(wrap(t,size,bold))*size*1.45+8 for t,size,bold in blocks)
  if not page or y+h>775:newpage()
