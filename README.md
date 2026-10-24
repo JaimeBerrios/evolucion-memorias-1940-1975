@@ -14,15 +14,15 @@
 ## 📌 Entregables del Proyecto
 
 - **[index.html](index.html)**: Presentación principal interactiva con Reveal.js, navegación, índice, notas de orador y tema institucional UNAB.
-- **[demo.html](demo.html)** (o `ejemplos/reveal-demo.html`): Demostración oficial de características avanzadas de Reveal.js (animaciones, diapositivas verticales, transiciones, etc.).
+- **[documentos/guion-equipo-1.pdf](documentos/guion-equipo-1.pdf)** y **[documentos/guion-equipo-1.html](documentos/guion-equipo-1.html)**: Guion conciso para la defensa por lámina.
 
 ---
 
 ## 🚀 Cómo Visualizar la Presentación
 
-Puedes abrir directamente los archivos HTML en tu navegador web favorito:
+Puedes abrir directamente el archivo HTML en tu navegador web favorito:
 
-1. **Directo en el navegador**: Haz doble clic en `index.html` (o `demo.html`).
+1. **Directo en el navegador**: Haz doble clic en `index.html`.
 2. **Servidor local (recomendado)**:
    - Con Python:
      ```bash
@@ -54,7 +54,6 @@ Puedes abrir directamente los archivos HTML en tu navegador web favorito:
 ```text
 .
 ├── index.html                  # Presentación principal
-├── demo.html                   # Demo oficial de Reveal.js
 ├── css/
 │   ├── unab.css                # Estilo y colores institucionales UNAB (#173864)
 │   └── presentacion.css        # Ajustes de láminas, herramientas e índice
@@ -65,8 +64,7 @@ Puedes abrir directamente los archivos HTML en tu navegador web favorito:
 │   ├── institucional/          # Logos e insignias oficiales de la UNAB
 │   ├── contenido/              # Imágenes y diagramas propios del tema
 │   └── iconos/                 # SVGs de FontAwesome para uso sin conexión
-├── ejemplos/
-│   └── reveal-demo.html        # Copia de respaldo de la demo Reveal.js
+├── documentos/                 # Guion (HTML/PDF), reparto y datos de intervenciones
 └── vendor/
     └── reveal.js/              # Biblioteca Reveal.js y plugins locales
 ```

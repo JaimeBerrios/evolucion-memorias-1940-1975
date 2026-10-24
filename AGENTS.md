@@ -8,7 +8,6 @@ Está enfocado exclusivamente en la elaboración y visualización de la presenta
 ## Estructura de Archivos
 
 - `index.html`: Diapositivas principales de la presentación con Reveal.js.
-- `demo.html` y `ejemplos/reveal-demo.html`: Demostración oficial de características de Reveal.js.
 - `css/unab.css`: Tema y estilos institucionales UNAB (color `#173864`, tipografía, tarjetas y bloques).
 - `css/presentacion.css`: Estilos específicos de navegación, herramientas de exposición y diseño de láminas.
 - `js/presentacion.js`: Inicialización de Reveal.js, configuración y sincronización de pie de diapositiva.
