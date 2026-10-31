@@ -14,7 +14,9 @@
 ## 📌 Entregables del Proyecto
 
 - **[index.html](index.html)**: Presentación principal interactiva con Reveal.js, navegación, índice, notas de orador y tema institucional UNAB.
-- **[documentos/guion-equipo-1.pdf](documentos/guion-equipo-1.pdf)** y **[documentos/guion-equipo-1.html](documentos/guion-equipo-1.html)**: Guion conciso para la defensa por lámina.
+- **[documentos/presentacion-equipo-1.pdf](documentos/presentacion-equipo-1.pdf)**: Presentación en PDF.
+
+El guion y el debate son material de apoyo local y no se incluyen en el repositorio.
 
 ---
 

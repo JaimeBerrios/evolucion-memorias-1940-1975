@@ -16,3 +16,7 @@ desktop.ini
 .env.*
 .agents/
 .codex/
+
+# Material de apoyo local
+/documentos/guion-equipo-1.*
+/documentos/debate-equipo-1.*
