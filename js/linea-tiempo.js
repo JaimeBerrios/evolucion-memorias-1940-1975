@@ -108,26 +108,3 @@ if (openingButton) {
   });
   document.getElementById('reiniciar-presentacion').addEventListener('click', resetOpeningBit);
 }
-
-// El mismo discurso cubre el mapa y la síntesis si Salvador no participa.
-const replacementButton = document.getElementById('alternar-suplencia');
-const replacementSlides = [...document.querySelectorAll('[data-suplente]')];
-replacementSlides.forEach(slide => {
-  slide.dataset.expositorTitular = slide.dataset.expositor;
-  slide.dataset.rolTitular = slide.querySelector('.role-tag').textContent;
-});
-function setReplacementMode(active) {
-  replacementSlides.forEach(slide => {
-    slide.dataset.expositor = active ? slide.dataset.suplente : slide.dataset.expositorTitular;
-    slide.querySelector('.role-tag').textContent = active ? slide.dataset.rolSuplente : slide.dataset.rolTitular;
-  });
-  if (replacementButton) {
-    replacementButton.setAttribute('aria-pressed', String(active));
-    replacementButton.textContent = active ? 'Restaurar participación de Salvador' : 'Activar suplencia de Salvador';
-  }
-  if (typeof actualizarPie === 'function') actualizarPie();
-}
-if (replacementButton) {
-  replacementButton.addEventListener('click', () => setReplacementMode(replacementButton.getAttribute('aria-pressed') !== 'true'));
-  setReplacementMode(new URLSearchParams(window.location.search).get('suplencia') === '1');
-}
